@@ -1,0 +1,15 @@
+---
+import Pagina from '../layouts/Pagina.astro';
+import cliente from '../content/cliente.json';
+---
+<Pagina cliente={cliente} adn={cliente.adn} titulo={`Preguntas frecuentes | ${cliente.nombre}`} descripcion={`Preguntas frecuentes sobre ${cliente.nombre}.`} actual="/preguntas-frecuentes/">
+  <h1 class="rv text-[clamp(2.5rem,7vw,6rem)]">Preguntas frecuentes</h1>
+  <div class="mt-12 max-w-3xl">
+    {(cliente.faq as { q: string; a: string }[]).map((f, i) => (
+      <details class="rv border-t border-line py-5" style={`--i:${i}`}>
+        <summary class="cursor-pointer text-lg font-semibold">{f.q}</summary>
+        <p class="mt-3 text-muted">{f.a}</p>
+      </details>
+    ))}
+  </div>
+</Pagina>

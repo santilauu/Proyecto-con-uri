@@ -1,0 +1,10 @@
+---
+import Sitio from '../../components/Sitio.astro';
+import cliente from '../../content/cliente.json';
+
+export function getStaticPaths() {
+  return Object.keys(cliente.adns).map((estilo) => ({ params: { estilo } }));
+}
+const { estilo } = Astro.params as { estilo: string };
+---
+<Sitio cliente={cliente} adn={(cliente.adns as any)[estilo]} demo={true} />

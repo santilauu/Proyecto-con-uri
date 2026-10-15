@@ -1,0 +1,21 @@
+---
+import Pagina from '../../layouts/Pagina.astro';
+import cliente from '../../content/cliente.json';
+import { whatsapp, slug } from '../../lib/sitio.js';
+
+export function getStaticPaths() {
+  return (cliente.servicios as { titulo: string; texto: string }[]).map((s) => ({
+    params: { slug: slug(s.titulo) },
+    props: { servicio: s },
+  }));
+}
+const { servicio } = Astro.props as { servicio: { titulo: string; texto: string } };
+const wa = whatsapp(cliente);
+---
+<Pagina cliente={cliente} adn={cliente.adn} titulo={`${servicio.titulo} | ${cliente.nombre}`} descripcion={servicio.texto} actual="/servicios/">
+  <p class="titulo text-accent">Servicio</p>
+  <h1 class="rv mt-4 text-[clamp(2.5rem,7vw,6rem)]">{servicio.titulo}</h1>
+  <p class="rv mt-8 max-w-2xl text-lg">{servicio.texto}</p>
+  <a class="btn rv mt-10" href={wa}>{cliente.cta}</a>
+  <p class="mt-16"><a class="underline underline-offset-4" href="/servicios/">Volver a todos los servicios</a></p>
+</Pagina>

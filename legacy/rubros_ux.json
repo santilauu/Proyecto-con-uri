@@ -1,0 +1,40 @@
+{
+  "pizzeria": {
+    "rubro": "Pizzeria",
+    "paginasHijasYModales": [
+      {
+        "id": "menu",
+        "nombre": "Menú / Carta Interactiva",
+        "tipo": "seccion_o_modal",
+        "descripcion": "Filtros por categoría (Pizzas, Empanadas, Bebidas) y selector de sabores"
+      },
+      {
+        "id": "combos",
+        "nombre": "Promociones & Combos",
+        "tipo": "banner_dinamico",
+        "descripcion": "Ofertas especiales con precio promocional"
+      },
+      {
+        "id": "delivery",
+        "nombre": "Cobertura & Pedidos",
+        "tipo": "modal_interactivo",
+        "descripcion": "Zona de entregas y cálculo de tiempo estimado"
+      }
+    ],
+    "componentesUX": [
+      {
+        "nombre": "Barra de navegación persistente",
+        "funcion": "Filtro rápido y resumen de orden"
+      },
+      {
+        "nombre": "Floating CTA WhatsApp",
+        "funcion": "Envío directo del pedido precargado"
+      }
+    ],
+    "microInteracciones": [
+      "Filtro de categorías instantáneo con Alpine.js",
+      "Selector modal de gustos mitad y mitad"
+    ],
+    "fechaActualizacion": "2026-10-13T02:16:49.453Z"
+  }
+}

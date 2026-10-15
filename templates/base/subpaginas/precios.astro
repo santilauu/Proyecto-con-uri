@@ -1,0 +1,15 @@
+---
+import Pagina from '../layouts/Pagina.astro';
+import cliente from '../content/cliente.json';
+---
+<Pagina cliente={cliente} adn={cliente.adn} titulo={`Precios | ${cliente.nombre}`} descripcion={`Precios de ${cliente.nombre}.`} actual="/precios/">
+  <h1 class="rv text-[clamp(2.5rem,7vw,6rem)]">Precios</h1>
+  <dl class="mt-12 max-w-3xl">
+    {(cliente.precios as { item: string; monto: string }[]).map((p, i) => (
+      <div class="rv flex items-baseline justify-between gap-6 border-t border-line py-5" style={`--i:${i}`}>
+        <dt class="text-lg">{p.item}</dt>
+        {p.monto && <dd class="titulo text-xl text-accent">{p.monto}</dd>}
+      </div>
+    ))}
+  </dl>
+</Pagina>

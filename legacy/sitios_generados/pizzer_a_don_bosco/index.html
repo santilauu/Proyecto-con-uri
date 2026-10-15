@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería Don Bosco — Experiencia Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;900&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #030712; color: #f9fafb; }
+        .glass { background: rgba(17, 24, 39, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.08); }
+    </style>
+</head>
+<body x-data="{ categoria: 'todos', modalOpen: false, productoSel: '' }" class="antialiased">
+    <nav class="max-w-7xl mx-auto p-6 flex justify-between items-center relative z-10">
+        <span class="font-black text-amber-400 tracking-widest uppercase text-sm">Pizzería Don Bosco</span>
+        <a href="https://wa.me/?text=Hola!%20Consulta%20para%20Pizzer%C3%ADa%20Don%20Bosco" class="text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 px-5 py-2.5 rounded-full transition-all">Pedir por WhatsApp</a>
+    </nav>
+    <main class="max-w-5xl mx-auto px-6 py-12 text-center relative z-10">
+        <h1 class="text-5xl font-black mb-6 text-white">Pizzería Don Bosco</h1>
+        <p class="text-slate-400 mb-6">Rubro: Pizzeria | Creado con arquitectura de industria (Pizzeria)</p>
+    </main>
+</body>
+</html>

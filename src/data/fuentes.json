@@ -1,0 +1,283 @@
+{
+  "syne-inter": {
+    "titulo": {
+      "pkg": "syne",
+      "familia": "Syne",
+      "pesos": [
+        700,
+        800
+      ]
+    },
+    "texto": {
+      "pkg": "inter",
+      "familia": "Inter",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "display"
+  },
+  "instrument-inter": {
+    "titulo": {
+      "pkg": "instrument-serif",
+      "familia": "Instrument Serif",
+      "pesos": [
+        400
+      ]
+    },
+    "texto": {
+      "pkg": "inter",
+      "familia": "Inter",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "serif"
+  },
+  "archivo-grotesk": {
+    "titulo": {
+      "pkg": "archivo",
+      "familia": "Archivo",
+      "pesos": [
+        800,
+        900
+      ]
+    },
+    "texto": {
+      "pkg": "space-grotesk",
+      "familia": "Space Grotesk",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "display"
+  },
+  "fraunces-manrope": {
+    "titulo": {
+      "pkg": "fraunces",
+      "familia": "Fraunces",
+      "pesos": [
+        600,
+        800
+      ]
+    },
+    "texto": {
+      "pkg": "manrope",
+      "familia": "Manrope",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "serif"
+  },
+  "bricolage-dmsans": {
+    "titulo": {
+      "pkg": "bricolage-grotesque",
+      "familia": "Bricolage Grotesque",
+      "pesos": [
+        600,
+        800
+      ]
+    },
+    "texto": {
+      "pkg": "dm-sans",
+      "familia": "DM Sans",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "sans"
+  },
+  "playfair-manrope": {
+    "titulo": {
+      "pkg": "playfair-display",
+      "familia": "Playfair Display",
+      "pesos": [
+        600,
+        800
+      ]
+    },
+    "texto": {
+      "pkg": "manrope",
+      "familia": "Manrope",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "serif"
+  },
+  "barlow-cond": {
+    "titulo": {
+      "pkg": "barlow-condensed",
+      "familia": "Barlow Condensed",
+      "pesos": [
+        600,
+        700
+      ]
+    },
+    "texto": {
+      "pkg": "barlow",
+      "familia": "Barlow",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "condensed"
+  },
+  "young-nunito": {
+    "titulo": {
+      "pkg": "young-serif",
+      "familia": "Young Serif",
+      "pesos": [
+        400
+      ]
+    },
+    "texto": {
+      "pkg": "nunito",
+      "familia": "Nunito",
+      "pesos": [
+        400,
+        700
+      ]
+    },
+    "mood": "soft"
+  },
+  "lora-worksans": {
+    "titulo": {
+      "pkg": "lora",
+      "familia": "Lora",
+      "pesos": [
+        600,
+        700
+      ]
+    },
+    "texto": {
+      "pkg": "work-sans",
+      "familia": "Work Sans",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "serif"
+  },
+  "baskerville-source": {
+    "titulo": {
+      "pkg": "libre-baskerville",
+      "familia": "Libre Baskerville",
+      "pesos": [
+        400,
+        700
+      ]
+    },
+    "texto": {
+      "pkg": "source-sans-3",
+      "familia": "Source Sans 3",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "serif"
+  },
+  "cormorant-figtree": {
+    "titulo": {
+      "pkg": "cormorant-garamond",
+      "familia": "Cormorant Garamond",
+      "pesos": [
+        500,
+        700
+      ]
+    },
+    "texto": {
+      "pkg": "figtree",
+      "familia": "Figtree",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "serif"
+  },
+  "outfit-public": {
+    "titulo": {
+      "pkg": "outfit",
+      "familia": "Outfit",
+      "pesos": [
+        600,
+        800
+      ]
+    },
+    "texto": {
+      "pkg": "public-sans",
+      "familia": "Public Sans",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "sans"
+  },
+  "unbounded-inter": {
+    "titulo": {
+      "pkg": "unbounded",
+      "familia": "Unbounded",
+      "pesos": [
+        700
+      ]
+    },
+    "texto": {
+      "pkg": "inter",
+      "familia": "Inter",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "display"
+  },
+  "dmserif-jakarta": {
+    "titulo": {
+      "pkg": "dm-serif-display",
+      "familia": "DM Serif Display",
+      "pesos": [
+        400
+      ]
+    },
+    "texto": {
+      "pkg": "plus-jakarta-sans",
+      "familia": "Plus Jakarta Sans",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "soft"
+  },
+  "sora-inter": {
+    "titulo": {
+      "pkg": "sora",
+      "familia": "Sora",
+      "pesos": [
+        600,
+        800
+      ]
+    },
+    "texto": {
+      "pkg": "inter",
+      "familia": "Inter",
+      "pesos": [
+        400,
+        600
+      ]
+    },
+    "mood": "sans"
+  }
+}

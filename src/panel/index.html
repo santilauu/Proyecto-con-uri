@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panel de páginas</title>
+  <style>
+    :root { --bg:#f6f5f2; --fg:#1d1d1b; --muted:#5f5d57; --accent:#1f5c4a; --accent-ink:#ffffff; --surface:#ffffff; --line:#d9d6ce; --warn:#8a2d1b; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, sans-serif; }
+    header { padding:16px 24px; background:var(--surface); border-bottom:1px solid var(--line); }
+    h1 { margin:0; font-size:20px; }
+    main { max-width:1200px; margin:0 auto; padding:24px; display:grid; gap:24px; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 860px) { main { grid-template-columns: 1fr; padding:16px; } }
+    section { background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:20px; }
+    section.ancho { grid-column: 1 / -1; }
+    h2 { margin:0 0 12px; font-size:17px; }
+    label { display:block; font-size:14px; color:var(--muted); margin:10px 0 4px; }
+    input, select, textarea { width:100%; padding:10px 12px; font:inherit; border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--fg); }
+    textarea { min-height:70px; resize:vertical; }
+    button { min-height:44px; padding:10px 16px; font:inherit; font-weight:600; border:0; border-radius:6px; background:var(--accent); color:var(--accent-ink); cursor:pointer; margin:4px 4px 4px 0; }
+    button.sec { background:transparent; color:var(--accent); border:1px solid var(--accent); }
+    button.peligro { background:var(--warn); }
+    button:disabled { opacity:.5; cursor:wait; }
+    .fila { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    @media (max-width:600px) { .fila { grid-template-columns:1fr; } }
+    table { width:100%; border-collapse:collapse; font-size:14px; }
+    th, td { text-align:left; padding:8px; border-bottom:1px solid var(--line); vertical-align:top; }
+    .estado { font-size:12px; padding:2px 8px; border-radius:999px; background:#e9eee9; color:var(--accent); white-space:nowrap; }
+    pre { background:#16181a; color:#e8e8e6; padding:12px; border-radius:6px; min-height:160px; max-height:360px; overflow:auto; font:13px/1.45 ui-monospace, Consolas, monospace; white-space:pre-wrap; }
+    .aviso { font-size:14px; color:var(--muted); margin:6px 0 0; }
+    .ok { color:var(--accent); } .error { color:var(--warn); }
+    a { color:var(--accent); }
+    .msg-error { color:var(--warn); font-size:14px; min-height:20px; }
+    #modal-datos { position:fixed; inset:0; background:rgba(0,0,0,.45); display:none; align-items:center; justify-content:center; padding:16px; z-index:11; }
+    #modal-datos.abierto { display:flex; }
+    #modal-datos .caja { background:var(--surface); border-radius:10px; width:min(860px,100%); max-height:94vh; overflow:auto; padding:22px; }
+    .campo { display:block; margin-top:10px; }
+    .campo textarea { min-height:90px; }
+    .dos { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    @media (max-width:640px) { .dos { grid-template-columns:1fr; } }
+    #zona-carga { border:2px dashed var(--line); border-radius:8px; padding:18px; text-align:center; margin-top:8px; }
+    #zona-carga.sobre { border-color:var(--accent); background:#eef5f1; }
+    .galeria-media { display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:8px; margin-top:12px; }
+    .galeria-media figure { margin:0; position:relative; }
+    .galeria-media img, .galeria-media video { width:100%; height:100px; object-fit:cover; border-radius:6px; background:#eee; }
+    .galeria-media button { position:absolute; top:4px; right:4px; min-height:28px; padding:2px 8px; font-size:12px; }
+  </style>
+</head>
+<body>
+<header><h1>Panel de páginas</h1><p id="estado-global" class="aviso" style="margin:6px 0 0;min-height:20px"></p></header>
+<main>
+
+  <section>
+    <h2>1. Cargar un negocio</h2>
+    <form id="form-negocio">
+      <div class="fila">
+        <div><label for="n-nombre">Nombre del negocio</label><input id="n-nombre" required /></div>
+        <div><label for="n-rubro">Rubro</label><select id="n-rubro" required></select></div>
+      </div>
+      <div class="fila">
+        <div><label for="n-zona">Zona</label><input id="n-zona" placeholder="Palermo, Buenos Aires" /></div>
+        <div><label for="n-tel">Teléfono / WhatsApp</label><input id="n-tel" placeholder="11 5555 1234" /></div>
+      </div>
+      <label for="n-dir">Dirección</label><input id="n-dir" />
+      <label for="n-fotos">Fotos de ejemplo: qué buscar en inglés (ej: kids clothes boutique). Si lo dejás vacío, usa palabras del rubro.</label><input id="n-fotos" placeholder="kids clothes boutique" />
+      <div class="fila">
+        <div><label for="n-estilo">Estilo</label><select id="n-estilo"></select></div>
+        <div><label for="n-ig">Instagram (sin @ o con @)</label><input id="n-ig" placeholder="opcional" /></div>
+      </div>
+      <div id="preguntas"></div>
+      <label for="n-precios">Precios (uno por línea, "Servicio: $monto")</label><textarea id="n-precios"></textarea>
+      <label for="n-equipo">Quiénes son (solo datos reales)</label><textarea id="n-equipo"></textarea>
+      <label for="n-faq">Preguntas frecuentes (una por línea: ¿Pregunta? Respuesta)</label><textarea id="n-faq"></textarea>
+      <button type="submit">Guardar negocio</button>
+      <p id="msg-negocio" class="aviso"></p>
+    </form>
+  </section>
+
+  <section>
+    <h2>2. Buscar prospectos en Google Maps</h2>
+    <form id="form-scrap">
+      <label for="s-rubro">Rubro</label><select id="s-rubro"></select>
+      <label for="s-consulta">Qué buscar (opcional, para rubros generales)</label><input id="s-consulta" placeholder="ej: tienda de ropa de bebés" />
+      <div class="fila">
+        <div><label for="s-zona">Zona</label><input id="s-zona" placeholder="Palermo, Buenos Aires" required /></div>
+        <div><label for="s-max">Máximo</label><input id="s-max" type="number" value="15" min="1" max="50" /></div>
+      </div>
+      <h3 style="font-size:15px;margin:16px 0 0">Filtros</h3>
+      <div class="fila">
+        <div><label for="f-web">Página web</label>
+          <select id="f-web"><option value="cualquiera">Cualquiera</option><option value="sin_web">Sin web (confirmada en el buscador)</option><option value="desactualizada">Web desactualizada</option></select></div>
+        <div><label for="f-tel">Teléfono</label>
+          <select id="f-tel"><option value="cualquiera">Cualquiera</option><option value="con">Con teléfono (Maps o redes)</option><option value="sin">Sin teléfono</option><option value="celular">Solo celular</option></select></div>
+      </div>
+      <div class="fila">
+        <div><label for="f-redes">Redes sociales</label>
+          <select id="f-redes"><option value="cualquiera">Cualquiera</option><option value="instagram">Tiene Instagram</option><option value="facebook">Tiene Facebook</option><option value="sin_redes">Sin redes</option></select></div>
+        <div><label for="f-excluir">Excluir palabras (separadas por coma)</label><input id="f-excluir" placeholder="ej: franquicia, sucursal" /></div>
+      </div>
+      <div class="fila">
+        <div><label for="f-rating">Calificación mínima (0 a 5)</label><input id="f-rating" type="number" min="0" max="5" step="0.1" value="0" /></div>
+        <div><label for="f-resenas">Reseñas mínimas</label><input id="f-resenas" type="number" min="0" step="1" value="0" /></div>
+      </div>
+      <p class="aviso">Los descartes se registran en el log con su motivo. Cada filtro extra puede hacer la búsqueda más lenta.</p>
+      <label><input type="checkbox" id="s-ver" style="width:auto"> Mostrar el navegador mientras busca</label>
+      <button type="submit">Buscar</button>
+      <p class="aviso">Descarta empresas grandes y los negocios fuera de la zona elegida.</p>
+    </form>
+  </section>
+
+  <section class="ancho">
+    <h2>3. Prospectos guardados</h2>
+    <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Negocio</th><th>Rubro</th><th>Zona</th><th>Teléfono</th><th>Estado</th><th>Acciones</th></tr></thead>
+        <tbody id="tabla"><tr><td colspan="6" class="aviso">Cargando...</td></tr></tbody>
+      </table>
+    </div>
+    <p class="aviso">Acá se buscan y guardan negocios (también quedan en data/leads.json). "Datos y fotos" guarda lo que te da el cliente y su pedido visual. La página se arma después, pidiéndoselo a Claude en el chat.</p>
+  </section>
+
+  <section class="ancho">
+    <h2>Registro</h2>
+    <p id="tarea-nombre" class="aviso">Sin tareas todavía.</p>
+    <pre id="registro"></pre>
+  </section>
+
+</main>
+
+<div id="modal-datos" role="dialog" aria-modal="true" aria-labelledby="md-titulo">
+  <div class="caja">
+    <h2 id="md-titulo">Datos del negocio</h2>
+    <p class="aviso">Cargá lo que te dio el cliente. Lo que dejes vacío se completa con [COMPLETAR] en la página.</p>
+    <div id="md-cuerpo"></div>
+    <h3 style="font-size:15px;margin-top:18px">Fotos y videos</h3>
+    <p class="aviso">Fotos (hasta 9, jpg/png/webp, 8 MB c/u) y videos (hasta 2, mp4/webm, 25 MB c/u). La primera foto apaisada se usa de portada.</p>
+    <div id="zona-carga" tabindex="0">
+      <p>Arrastrá archivos acá o <label for="md-archivos" style="color:var(--accent);text-decoration:underline;cursor:pointer">elegí en tu computadora</label></p>
+      <input type="file" id="md-archivos" multiple accept="image/jpeg,image/png,image/webp,video/mp4,video/webm" style="display:none">
+      <p class="aviso" id="md-progreso"></p>
+    </div>
+    <div id="md-galeria" class="galeria-media"></div>
+    <p class="msg-error" id="md-error"></p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+      <button id="md-guardar">Guardar datos</button>
+      <button id="md-cerrar" class="sec" style="margin-left:auto">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let datos = null;
+let tareaActual = null;
+
+async function api(ruta, opciones = {}) {
+  const res = await fetch(ruta, { headers: { 'content-type': 'application/json' }, ...opciones, body: opciones.body ? JSON.stringify(opciones.body) : undefined });
+  const json = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(json.error || `Error ${res.status}`);
+  return json;
+}
+
+function rellenarSelects() {
+  $('n-rubro').innerHTML = datos.rubros.map((r) => `<option value="${r.key}">${r.nombre}</option>`).join('');
+  $('s-rubro').innerHTML = datos.rubros.map((r) => `<option value="${r.key}">${r.nombre}</option>`).join('');
+  $('n-estilo').innerHTML = datos.estilos.map((e) => `<option value="${e.key}">${e.nombre}: ${e.descripcion}</option>`).join('');
+  pintarPreguntas();
+}
+
+function pintarPreguntas() {
+  const r = datos.rubros.find((x) => x.key === $('n-rubro').value);
+  $('preguntas').innerHTML = (r?.preguntas ?? [])
+    .filter((p) => !['servicios', 'extra', 'instagram', 'precios', 'equipo', 'faq'].includes(p.campo))
+    .map((p) => `<label for="p-${p.campo}">${p.texto}</label><input id="p-${p.campo}" data-campo="${p.campo}" />`).join('');
+  const servicios = (r?.preguntas ?? []).find((p) => p.campo === 'servicios');
+  const extra = (r?.preguntas ?? []).find((p) => p.campo === 'extra');
+  $('preguntas').insertAdjacentHTML('afterbegin', `<label for="p-servicios">${servicios?.texto ?? 'Servicios'}</label><textarea id="p-servicios"></textarea>`
+    + `<label for="p-horarios">Horarios de atención</label><input id="p-horarios" />`
+    + `<label for="p-extra">${extra?.texto ?? 'Algo que los distinga (solo datos reales)'}</label><textarea id="p-extra"></textarea>`);
+}
+
+function fila(p) {
+  const acciones = `<button class="sec" data-acc="datos" data-id="${p.id}">Datos y fotos</button> <button class="sec" data-acc="prompt" data-id="${p.id}">Generar prompt para Claude</button>`;
+  return `<tr><td>${p.nombre}</td><td>${datos.rubros.find((r) => r.key === p.rubro)?.nombre ?? p.rubro}</td><td>${p.zona ?? ''}</td><td>${p.telefono ?? '-'}</td><td><span class="estado">${p.estado}</span></td><td>${acciones}</td></tr>`;
+}
+
+// Carpetas por rubro: las que el usuario cerró.
+const carpetasCerradas = new Set();
+
+function pintarTabla() {
+  if (!datos.prospectos.length) {
+    $('tabla').innerHTML = '<tr><td colspan="6" class="aviso">Todavía no hay negocios cargados.</td></tr>';
+    return;
+  }
+  const grupos = {};
+  for (const p of datos.prospectos) (grupos[p.rubro] ??= []).push(p);
+  $('tabla').innerHTML = Object.entries(grupos).map(([rubro, lista]) => {
+    const nombre = datos.rubros.find((r) => r.key === rubro)?.nombre ?? rubro;
+    const abierta = !carpetasCerradas.has(rubro);
+    const cabecera = `<tr><td colspan="6" style="background:var(--bg)">
+      <button class="sec" data-carpeta="${rubro}" aria-expanded="${abierta}" style="min-height:40px">${abierta ? '▾' : '▸'} ${nombre} <span class="chip">${lista.length}</span></button>
+    </td></tr>`;
+    return cabecera + (abierta ? lista.map(fila).join('') : '');
+  }).join('');
+}
+
+async function cargar() {
+  datos = await api('/api/datos');
+  rellenarSelects();
+  pintarTabla();
+}
+
+function seguirTarea(id, nombre) {
+  tareaActual = id;
+  $('tarea-nombre').textContent = nombre;
+  $('registro').textContent = '';
+  const tick = async () => {
+    if (tareaActual !== id) return;
+    try {
+      const t = await api(`/api/tarea/${id}`);
+      $('registro').textContent = t.log.join('\n');
+      $('registro').scrollTop = $('registro').scrollHeight;
+      $('estado-global').textContent = t.terminada ? '' : `En curso: ${t.nombre}. ${t.log[t.log.length - 1] ?? ''}`;
+      if (t.terminada) {
+        const links = (t.resultado?.enlaces ?? (t.resultado?.url ? [t.resultado.url] : [])).map((u) => `<a href="${u}" target="_blank" rel="noopener">${u}</a>`).join(' · ');
+        $('tarea-nombre').innerHTML = (t.ok ? `<span class="ok">${t.nombre}: terminado.</span> ` : `<span class="error">${t.nombre}: falló. Mirá el registro.</span> `) + links;
+        $('estado-global').textContent = t.ok ? 'Última tarea terminada.' : 'La última tarea falló.';
+        tareaActual = null;
+        await cargar();
+        return;
+      }
+    } catch (e) { $('registro').textContent += `\n${e.message}`; tareaActual = null; return; }
+    setTimeout(tick, 1200);
+  };
+  tick();
+}
+
+$('n-rubro').addEventListener('change', pintarPreguntas);
+
+// ---------- datos del negocio y fotos/videos ----------
+let mdId = null;
+const lineas = (t) => (t || '').split('\n').map((x) => x.trim()).filter(Boolean);
+const aTexto = (lista, f) => (lista || []).map(f).join('\n');
+
+async function abrirDatos(id) {
+  mdId = id;
+  const d = await api('/api/negocio/' + id);
+  const x = d.datos || {};
+  const campo = (etiqueta, id2, valor = '', tipo = 'input') => tipo === 'textarea'
+    ? '<label class="campo" for="' + id2 + '">' + etiqueta + '</label><textarea id="' + id2 + '">' + (valor || '') + '</textarea>'
+    : '<label class="campo" for="' + id2 + '">' + etiqueta + '</label><input id="' + id2 + '" value="' + (valor || '').replace(/"/g, '&quot;') + '">';
+  $('md-titulo').textContent = 'Datos de ' + d.lead.nombre;
+  $('md-cuerpo').innerHTML = '<div class="dos">'
+    + campo('Título de la portada', 'md-titulo-p', x.titulo)
+    + campo('Texto de la portada', 'md-bajada', x.bajada)
+    + campo('Botón principal', 'md-cta', x.cta)
+    + campo('Teléfono', 'md-tel', x.telefono)
+    + campo('Horarios', 'md-horarios', x.horarios)
+    + campo('Dirección', 'md-dir', x.direccion)
+    + campo('Instagram (usuario)', 'md-ig', x.instagram)
+    + campo('Facebook (enlace)', 'md-fb', x.facebook)
+    + '</div>'
+    + '<label class="campo" for="md-prompt">Cómo querés que se vea tu página (colores, estilo, sensación; hasta 1500 caracteres)</label><textarea id="md-prompt" maxlength="1500" rows="4" placeholder="Ej: minimalista, blanco y negro, tipografía grande tipo revista">' + (d.promptVisual || '').replace(/</g, '&lt;') + '</textarea>'
+    + campo('Sobre el negocio', 'md-sobre', x.sobre, 'textarea')
+    + campo('Servicios (uno por línea: Título | descripción)', 'md-servicios', aTexto(x.servicios, (s) => s.titulo + (s.texto ? ' | ' + s.texto : '')), 'textarea')
+    + campo('Precios (uno por línea: Servicio: monto)', 'md-precios', aTexto(x.precios, (p) => p.item + (p.monto ? ': ' + p.monto : '')), 'textarea')
+    + campo('Quiénes son (equipo)', 'md-equipo', x.equipo, 'textarea')
+    + campo('Preguntas frecuentes (una por línea: Pregunta | respuesta)', 'md-faq', aTexto(x.faq, (f) => f.q + ' | ' + f.a), 'textarea');
+  $('md-error').textContent = '';
+  pintarMedia(d.media);
+  $('modal-datos').classList.add('abierto');
+}
+
+function pintarMedia(m) {
+  const fotos = (m.fotos || []).map((a) => '<figure><img src="/api/media/' + mdId + '/' + a + '" alt=""><button data-borrar="' + a + '" class="sec">Quitar</button></figure>');
+  const videos = (m.videos || []).map((a) => '<figure><video src="/api/media/' + mdId + '/' + a + '" controls preload="metadata"></video><button data-borrar="' + a + '" class="sec">Quitar</button></figure>');
+  $('md-galeria').innerHTML = fotos.concat(videos).join('') || '<p class="aviso">Todavía no hay fotos ni videos.</p>';
+}
+
+async function subirArchivos(lista) {
+  for (const archivo of [...lista]) {
+    $('md-progreso').textContent = 'Subiendo ' + archivo.name + '...';
+    const data = await new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = rej; r.readAsDataURL(archivo); });
+    try { await api('/api/media/' + mdId, { method: 'POST', body: { nombre: archivo.name, data } }); }
+    catch (err) { $('md-error').textContent = archivo.name + ': ' + err.message; }
+  }
+  $('md-progreso').textContent = '';
+  pintarMedia((await api('/api/negocio/' + mdId)).media);
+}
+
+$('md-archivos').addEventListener('change', (e) => subirArchivos(e.target.files));
+const zona = $('zona-carga');
+zona.addEventListener('dragover', (e) => { e.preventDefault(); zona.classList.add('sobre'); });
+zona.addEventListener('dragleave', () => zona.classList.remove('sobre'));
+zona.addEventListener('drop', (e) => { e.preventDefault(); zona.classList.remove('sobre'); subirArchivos(e.dataTransfer.files); });
+$('md-galeria').addEventListener('click', async (e) => {
+  const b = e.target.closest('button[data-borrar]');
+  if (!b || !confirm('¿Quitar este archivo del negocio?')) return;
+  await api('/api/media/' + mdId + '/' + b.dataset.borrar, { method: 'DELETE' });
+  pintarMedia((await api('/api/negocio/' + mdId)).media);
+});
+
+async function guardarDatos() {
+  $('md-error').textContent = '';
+  const v = (id2) => $(id2).value;
+  const cuerpo = {
+    titulo: v('md-titulo-p'), bajada: v('md-bajada'), cta: v('md-cta'), telefono: v('md-tel'), horarios: v('md-horarios'),
+    direccion: v('md-dir'), instagram: v('md-ig'), facebook: v('md-fb'), sobre: v('md-sobre'), equipo: v('md-equipo'),
+    promptVisual: v('md-prompt'),
+    servicios: lineas(v('md-servicios')).map((l) => { const [t, ...r] = l.split('|'); return { titulo: t.trim(), texto: r.join('|').trim() }; }),
+    precios: lineas(v('md-precios')).map((l) => { const i = l.lastIndexOf(':'); return i > 0 ? { item: l.slice(0, i).trim(), monto: l.slice(i + 1).trim() } : { item: l.trim(), monto: '' }; }),
+    faq: lineas(v('md-faq')).map((l) => { const [q, ...r] = l.split('|'); return { q: q.trim(), a: r.join('|').trim() }; }),
+  };
+  try {
+    await api('/api/negocio/' + mdId, { method: 'POST', body: cuerpo });
+    $('md-error').innerHTML = '<span class="ok">Datos guardados. Pedile a Claude que arme o actualice la página.</span>';
+    await cargar();
+  } catch (err) { $('md-error').textContent = err.message; }
+}
+$('md-guardar').addEventListener('click', guardarDatos);
+$('md-cerrar').addEventListener('click', () => $('modal-datos').classList.remove('abierto'));
+
+
+
+$('form-negocio').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const respuestas = { servicios: $('p-servicios').value, horarios: $('p-horarios').value, extra: $('p-extra').value, precios: $('n-precios').value, equipo: $('n-equipo').value, faq: $('n-faq').value, instagram: $('n-ig').value || 'no' };
+  document.querySelectorAll('#preguntas input[data-campo]').forEach((i) => { respuestas[i.dataset.campo] = i.value; });
+  try {
+    const lead = await api('/api/prospecto', { method: 'POST', body: { nombre: $('n-nombre').value, rubro: $('n-rubro').value, zona: $('n-zona').value, telefono: $('n-tel').value, direccion: $('n-dir').value, terminosFotos: $('n-fotos').value.trim(), estilo: $('n-estilo').value, respuestas } });
+    $('msg-negocio').innerHTML = `<span class="ok">Guardado: ${lead.nombre}. Ya aparece en la tabla.</span>`;
+    e.target.reset(); pintarPreguntas();
+    await cargar();
+  } catch (err) { $('msg-negocio').innerHTML = `<span class="error">${err.message}</span>`; }
+});
+
+$('form-scrap').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  try {
+    const excluir = $('f-excluir').value.split(',').map((x) => x.trim()).filter(Boolean);
+    const filtros = { estadoWeb: $('f-web').value, telefono: $('f-tel').value, redes: $('f-redes').value, calificacionMinima: $('f-rating').value || 0, resenasMinimas: $('f-resenas').value || 0, excluir };
+    const r = await api('/api/scrap', { method: 'POST', body: { rubro: $('s-rubro').value, zona: $('s-zona').value, consulta: $('s-consulta').value, maximo: Number($('s-max').value) || 15, verNavegador: $('s-ver').checked, filtros } });
+    seguirTarea(r.tarea, `Buscar en ${$('s-zona').value}`);
+  } catch (err) { alert(err.message); }
+});
+
+document.addEventListener('click', async (e) => {
+  const carpeta = e.target.closest('button[data-carpeta]');
+  if (carpeta) {
+    const r = carpeta.dataset.carpeta;
+    if (carpetasCerradas.has(r)) carpetasCerradas.delete(r); else carpetasCerradas.add(r);
+    pintarTabla();
+    return;
+  }
+  const b = e.target.closest('button[data-acc]');
+  if (!b) return;
+  if (b.dataset.acc === 'datos') abrirDatos(b.dataset.id).catch((err) => alert(err.message));
+  if (b.dataset.acc === 'prompt') {
+    api('/api/negocio/' + b.dataset.id + '/prompt').then(async (r) => {
+      $('tarea-nombre').textContent = 'Prompt para Claude (copiado al portapapeles)';
+      $('registro').textContent = r.prompt;
+      $('registro').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      try { await navigator.clipboard.writeText(r.prompt); $('estado-global').textContent = 'Prompt copiado. Pegalo en el chat con Claude.'; }
+      catch { $('estado-global').textContent = 'No pude copiarlo: seleccionalo del registro y copialo a mano.'; }
+    }).catch((err) => alert(err.message));
+  }
+});
+
+cargar().catch((err) => { $('tabla').innerHTML = `<tr><td colspan="6" class="error">No pude cargar los datos: ${err.message}</td></tr>`; });
+</script>
+</body>
+</html>

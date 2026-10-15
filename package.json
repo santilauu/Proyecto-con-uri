@@ -1,0 +1,24 @@
+{
+  "name": "mi-automatizador",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/automation/cli.js",
+    "webhook": "node src/automation/webhook.js",
+    "doctor": "node src/automation/doctor.js",
+    "verificar": "node src/automation/verificar.js",
+    "precios": "node src/automation/precios.js",
+    "panel": "node src/panel/server.js",
+    "plantillas": "node src/automation/plantillas-rubro.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "inquirer": "^14.2.3",
+    "playwright": "^1.64.0",
+    "sharp": "^0.35.5"
+  }
+}

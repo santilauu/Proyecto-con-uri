@@ -1,0 +1,16 @@
+---
+interface Props { cliente: any; actual?: string }
+const { cliente, actual = '/' } = Astro.props;
+const items = [{ ruta: '/', titulo: 'Inicio' }, ...((cliente.paginas as { ruta: string; titulo: string }[]) ?? [])];
+---
+<nav aria-label="Principal" class="flex flex-wrap items-center gap-x-6 gap-y-1 text-sm">
+  {items.map((p) => (
+    <a
+      href={p.ruta}
+      aria-current={p.ruta === actual ? 'page' : undefined}
+      class={`inline-flex min-h-11 items-center underline-offset-4 hover:underline focus-visible:underline ${p.ruta === actual ? 'font-semibold text-accent' : ''}`}
+    >
+      {p.titulo}
+    </a>
+  ))}
+</nav>

@@ -1,0 +1,21 @@
+---
+import Pagina from '../layouts/Pagina.astro';
+import cliente from '../content/cliente.json';
+import { whatsapp, instagram, mapa } from '../lib/sitio.js';
+
+const wa = whatsapp(cliente);
+const ig = instagram(cliente);
+const maps = mapa(cliente);
+---
+<Pagina cliente={cliente} adn={cliente.adn} titulo={`Contacto | ${cliente.nombre}`} descripcion={`Cómo llegar y cómo contactar a ${cliente.nombre}.`} actual="/contacto/">
+  <h1 class="rv text-[clamp(2.5rem,7vw,6rem)]">{cliente.adn.textos.contacto}</h1>
+  <dl class="mt-12 grid gap-10 md:grid-cols-3">
+    <div class="rv"><dt class="mb-2 text-sm uppercase tracking-[.2em] text-muted">Horarios</dt><dd class="text-lg">{cliente.horarios}</dd></div>
+    <div class="rv"><dt class="mb-2 text-sm uppercase tracking-[.2em] text-muted">Dirección</dt><dd class="text-lg">{maps ? <a class="underline underline-offset-4" href={maps} rel="noopener">{cliente.direccion}</a> : cliente.direccion}</dd></div>
+    {cliente.telefono && <div class="rv"><dt class="mb-2 text-sm uppercase tracking-[.2em] text-muted">Teléfono</dt><dd class="text-lg"><a class="underline underline-offset-4" href={`tel:${cliente.telefono.replace(/[^\d+]/g, '')}`}>{cliente.telefono}</a></dd></div>}
+  </dl>
+  <div class="mt-12 flex flex-wrap gap-4">
+    <a class="btn rv" href={wa}>{cliente.cta}</a>
+    {ig && <a class="btn btn-ghost rv" href={ig} rel="noopener">Instagram</a>}
+  </div>
+</Pagina>

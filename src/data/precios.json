@@ -1,0 +1,173 @@
+{
+  "fx": {
+    "usdArs": 1540,
+    "fuente": "dólar blue, cierre 11/10/2026 (Infocampo)",
+    "fecha": "2026-10-11"
+  },
+  "mercado": {
+    "freelancerPisoArs": {
+      "ars": 150000,
+      "fuente": "Aviso de freelancer en Servidos.ar, octubre 2026 (piso publicitario, sin detalle de qué incluye)",
+      "confianza": "baja"
+    },
+    "landingUsd": {
+      "min": 150,
+      "max": 250,
+      "fuente": "GoDaddy Argentina, precios del 13/11/2025",
+      "confianza": "media"
+    },
+    "institucionalBasicoUsd": {
+      "min": 150,
+      "max": 400,
+      "fuente": "GoDaddy Argentina, 13/11/2025",
+      "confianza": "media"
+    },
+    "corporativaProUsd": {
+      "min": 1500,
+      "max": 5000,
+      "fuente": "GoDaddy Argentina, 13/11/2025",
+      "confianza": "media"
+    },
+    "hostingUsdMes": {
+      "valor": 5.99,
+      "fuente": "GoDaddy cPanel, desde",
+      "confianza": "media"
+    },
+    "seguridadUsdMes": {
+      "valor": 6.99,
+      "fuente": "GoDaddy Website Security, desde",
+      "confianza": "media"
+    }
+  },
+  "costos": {
+    "fijosMensualesUsd": {
+      "vercelPro": 20,
+      "claudePro": 20
+    },
+    "horaUsd": 8,
+    "comisionCobro": 0.06,
+    "contactosPorVenta": 40,
+    "usdPorMensajeMarketing": 0.0305,
+    "claudeApiPorSitioUsd": 0.02,
+    "ventasPorMes": 10,
+    "clientesActivosParaAmortizar": 20
+  },
+  "reglaPrecio": {
+    "maximoSobrePisoMercado": 0.85,
+    "minimoSobreCosto": 1.5
+  },
+  "categorias": [
+    {
+      "id": "presencia",
+      "nombre": "Presencia",
+      "usd": 59,
+      "horas": 1.5,
+      "referencia": "freelancerPisoArs",
+      "paraQuien": "Negocios que hoy no tienen nada y necesitan aparecer en Google y que los escriban por WhatsApp.",
+      "incluye": [
+        "1 página a medida de tu rubro (portada, servicios, horarios, ubicación)",
+        "Estilo a elegir entre 3 propuestas",
+        "Botón de WhatsApp, mapa y llamada directa",
+        "Adaptada a celular, rápida, con SEO básico",
+        "Hosting y certificado de seguridad 12 meses",
+        "Hasta 4 fotos tuyas",
+        "1 ronda de cambios",
+        "Entrega en 48 h desde que mandás los datos"
+      ],
+      "noIncluye": [
+        "Dominio propio (se cobra a costo)",
+        "Videos ni galería",
+        "Secciones de precios, equipo o preguntas frecuentes"
+      ]
+    },
+    {
+      "id": "negocio",
+      "nombre": "Negocio",
+      "usd": 99,
+      "horas": 2.5,
+      "referencia": "institucionalBasicoUsd.min",
+      "paraQuien": "Negocios con Instagram activo que quieren mostrar su trabajo y generar más consultas.",
+      "incluye": [
+        "Todo lo de Presencia",
+        "Galería con hasta 9 fotos y 2 videos",
+        "Instagram y Facebook vinculados",
+        "1 sección extra a elección: precios, equipo o preguntas frecuentes",
+        "Dominio propio conectado (el dominio se paga aparte, a costo)",
+        "Guía para sumar la web a tu ficha de Google",
+        "2 rondas de cambios",
+        "30 días de soporte"
+      ],
+      "noIncluye": [
+        "Diseño exclusivo con propuestas a medida",
+        "Entrega del código fuente"
+      ]
+    },
+    {
+      "id": "destacado",
+      "nombre": "Destacado",
+      "usd": 169,
+      "horas": 4,
+      "referencia": "institucionalBasicoUsd.max",
+      "paraQuien": "Negocios que quieren diferenciarse de la competencia y vender más con la web.",
+      "incluye": [
+        "Todo lo de Negocio",
+        "Diseño exclusivo: 2 propuestas distintas para que elijas portada, layout y colores",
+        "Las 3 secciones extra: precios, equipo y preguntas frecuentes",
+        "SEO local reforzado (datos estructurados para Google)",
+        "3 rondas de cambios y 60 días de soporte",
+        "Código fuente entregado o alojado, según acuerdo",
+        "Capacitación de 30 minutos para editar textos"
+      ],
+      "noIncluye": [
+        "Tienda online con carrito de compras (se deriva a una plataforma especializada)"
+      ]
+    }
+  ],
+  "abonos": [
+    {
+      "id": "cuidado",
+      "nombre": "Cuidado",
+      "usdMes": 5,
+      "horasMes": 0.25,
+      "referencia": "hosting+seguridad",
+      "incluye": [
+        "Hosting y certificado de seguridad",
+        "Copias de seguridad",
+        "1 cambio de texto, horario o foto por mes",
+        "Aviso si la web se cae"
+      ]
+    },
+    {
+      "id": "cuidado-plus",
+      "nombre": "Cuidado Plus",
+      "usdMes": 9,
+      "horasMes": 0.5,
+      "referencia": "hosting+seguridad",
+      "incluye": [
+        "Todo lo de Cuidado",
+        "3 cambios por mes",
+        "Reporte mensual de visitas y consultas",
+        "Respuesta prioritaria",
+        "Actualización de fotos y promociones"
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "nombre": "Cambio adicional (texto, horario, foto)",
+      "usd": 5
+    },
+    {
+      "nombre": "Sección nueva a medida",
+      "usd": 15
+    },
+    {
+      "nombre": "Gestión de dominio (más el costo del dominio)",
+      "usd": 5
+    },
+    {
+      "nombre": "Pedido urgente (entrega en 24 h)",
+      "usd": 20
+    }
+  ]
+}

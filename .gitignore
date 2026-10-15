@@ -1,0 +1,25 @@
+node_modules
+.env
+data/*.json
+sites/*
+!sites/.gitkeep
+.vercel
+dist
+
+# Lovable: tokens de acceso, bloqueo y registros locales (nunca al repositorio)
+data/lovable/.oauth.json
+data/lovable/.trabajo.lock
+data/lovable/*/log.txt
+
+# Datos de negocios y archivos de clientes: solo en esta PC
+/data/
+!data/.gitkeep
+
+# Archivos generados o locales
+*.log
+_*.mjs
+_*.png
+
+# Plantillas de configuraciÃ³n con valores de prueba y proyectos de terceros
+.env.example
+plugins/

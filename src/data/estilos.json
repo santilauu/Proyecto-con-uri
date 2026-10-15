@@ -1,0 +1,489 @@
+{
+  "noir": {
+    "nombre": "Noir",
+    "descripcion": "Oscuro, titulares enormes, acento cálido. Revelado con máscara.",
+    "modo": "oscuro",
+    "tokens": {
+      "bg": "#0b0b0c",
+      "fg": "#f4f1ea",
+      "muted": "#a8a39a",
+      "accent": "#f5a524",
+      "accentInk": "#0b0b0c",
+      "surface": "#151517",
+      "line": "#2a2a2d"
+    },
+    "radio": "2px",
+    "sombra": "none",
+    "hCase": "none",
+    "hTrack": "-0.03em",
+    "hWeight": 800,
+    "pares": [
+      "syne-inter",
+      "unbounded-inter",
+      "sora-inter"
+    ],
+    "animaciones": [
+      "clip",
+      "fade"
+    ],
+    "tinte": true,
+    "heroes": [
+      "gigante",
+      "split",
+      "asimetrico",
+      "lateral",
+      "tarjeta"
+    ],
+    "servicios": [
+      "lista",
+      "grid",
+      "bento",
+      "escalera"
+    ],
+    "decor": [
+      "grano",
+      "rejilla",
+      "diagonal",
+      "aros",
+      "ninguno"
+    ]
+  },
+  "editorial": {
+    "nombre": "Editorial",
+    "descripcion": "Claro, papel crema, serif elegante. Entradas suaves.",
+    "modo": "claro",
+    "tokens": {
+      "bg": "#f6f1e7",
+      "fg": "#1b1a17",
+      "muted": "#5c574d",
+      "accent": "#b4361f",
+      "accentInk": "#ffffff",
+      "surface": "#ede6d6",
+      "line": "#d8cfbb"
+    },
+    "radio": "0px",
+    "sombra": "none",
+    "hCase": "none",
+    "hTrack": "-0.02em",
+    "hWeight": 400,
+    "pares": [
+      "instrument-inter",
+      "cormorant-figtree",
+      "dmserif-jakarta"
+    ],
+    "animaciones": [
+      "fade",
+      "slide"
+    ],
+    "tinte": true,
+    "heroes": [
+      "gigante",
+      "split",
+      "asimetrico",
+      "lateral",
+      "tarjeta"
+    ],
+    "servicios": [
+      "lista",
+      "grid",
+      "bento",
+      "escalera"
+    ],
+    "decor": [
+      "grano",
+      "rejilla",
+      "diagonal",
+      "aros",
+      "ninguno"
+    ]
+  },
+  "brutal": {
+    "nombre": "Brutal",
+    "descripcion": "Alto contraste, bordes duros, sombras planas. Movimiento seco.",
+    "modo": "claro",
+    "tokens": {
+      "bg": "#ffe600",
+      "fg": "#0a0a0a",
+      "muted": "#3d3a00",
+      "accent": "#0a0a0a",
+      "accentInk": "#ffe600",
+      "surface": "#ffffff",
+      "line": "#0a0a0a"
+    },
+    "radio": "0px",
+    "sombra": "6px 6px 0 #0a0a0a",
+    "hCase": "uppercase",
+    "hTrack": "-0.02em",
+    "hWeight": 900,
+    "pares": [
+      "archivo-grotesk",
+      "unbounded-inter"
+    ],
+    "animaciones": [
+      "slide"
+    ],
+    "tinte": false,
+    "acentoFijo": true,
+    "heroes": [
+      "gigante",
+      "split",
+      "asimetrico",
+      "lateral",
+      "tarjeta"
+    ],
+    "servicios": [
+      "lista",
+      "grid",
+      "bento",
+      "escalera"
+    ],
+    "decor": [
+      "grano",
+      "rejilla",
+      "diagonal",
+      "aros",
+      "ninguno"
+    ]
+  },
+  "calido": {
+    "nombre": "Cálido",
+    "descripcion": "Terracota y crema, formas orgánicas, esquinas amplias.",
+    "modo": "claro",
+    "tokens": {
+      "bg": "#fbf3e9",
+      "fg": "#2b1b14",
+      "muted": "#6b5144",
+      "accent": "#b5482a",
+      "accentInk": "#ffffff",
+      "surface": "#f3e3d1",
+      "line": "#e2cdb4"
+    },
+    "radio": "28px",
+    "sombra": "none",
+    "hCase": "none",
+    "hTrack": "-0.02em",
+    "hWeight": 800,
+    "pares": [
+      "fraunces-manrope",
+      "young-nunito",
+      "dmserif-jakarta"
+    ],
+    "animaciones": [
+      "fade"
+    ],
+    "tinte": true,
+    "heroes": [
+      "gigante",
+      "split",
+      "asimetrico",
+      "lateral",
+      "tarjeta"
+    ],
+    "servicios": [
+      "lista",
+      "grid",
+      "bento",
+      "escalera"
+    ],
+    "decor": [
+      "grano",
+      "rejilla",
+      "diagonal",
+      "aros",
+      "ninguno"
+    ]
+  },
+  "fresco": {
+    "nombre": "Fresco",
+    "descripcion": "Verde y blanco, aire y claridad. Entradas limpias.",
+    "modo": "claro",
+    "tokens": {
+      "bg": "#f7fbf8",
+      "fg": "#0e2a1f",
+      "muted": "#48635a",
+      "accent": "#0f6b4b",
+      "accentInk": "#ffffff",
+      "surface": "#e5f1ea",
+      "line": "#c9dfd2"
+    },
+    "radio": "12px",
+    "sombra": "none",
+    "hCase": "none",
+    "hTrack": "-0.035em",
+    "hWeight": 800,
+    "pares": [
+      "bricolage-dmsans",
+      "outfit-public",
+      "sora-inter"
+    ],
+    "animaciones": [
+      "slide",
+      "fade"
+    ],
+    "tinte": true,
+    "heroes": [
+      "gigante",
+      "split",
+      "asimetrico",
+      "lateral",
+      "tarjeta"
+    ],
+    "servicios": [
+      "lista",
+      "grid",
+      "bento",
+      "escalera"
+    ],
+    "decor": [
+      "grano",
+      "rejilla",
+      "diagonal",
+      "aros",
+      "ninguno"
+    ]
+  },
+  "elegante": {
+    "nombre": "Elegante",
+    "descripcion": "Verde profundo y champagne, serif clásica. Revelado lento.",
+    "modo": "oscuro",
+    "tokens": {
+      "bg": "#0f2a21",
+      "fg": "#f3ebdd",
+      "muted": "#b9c4bc",
+      "accent": "#d9bf8c",
+      "accentInk": "#0f2a21",
+      "surface": "#163628",
+      "line": "#2c4a3c"
+    },
+    "radio": "0px",
+    "sombra": "none",
+    "hCase": "none",
+    "hTrack": "-0.01em",
+    "hWeight": 600,
+    "pares": [
+      "playfair-manrope",
+      "cormorant-figtree",
+      "baskerville-source"
+    ],
+    "animaciones": [
+      "clip",
+      "fade"
+    ],
+    "tinte": true,
+    "heroes": [
+      "gigante",
+      "split",
+      "asimetrico",
+      "lateral",
+      "tarjeta"
+    ],
+    "servicios": [
+      "lista",
+      "grid",
+      "bento",
+      "escalera"
+    ],
+    "decor": [
+      "grano",
+      "rejilla",
+      "diagonal",
+      "aros",
+      "ninguno"
+    ]
+  },
+  "industrial": {
+    "nombre": "Industrial",
+    "descripcion": "Grafito y naranja, tipografía condensada, líneas rectas.",
+    "modo": "oscuro",
+    "tokens": {
+      "bg": "#1c1f22",
+      "fg": "#f2f2f0",
+      "muted": "#b0b4b8",
+      "accent": "#ff7a1a",
+      "accentInk": "#1c1f22",
+      "surface": "#26292d",
+      "line": "#3a3e43"
+    },
+    "radio": "0px",
+    "sombra": "none",
+    "hCase": "uppercase",
+    "hTrack": "0em",
+    "hWeight": 700,
+    "pares": [
+      "barlow-cond",
+      "archivo-grotesk",
+      "outfit-public"
+    ],
+    "animaciones": [
+      "slide",
+      "clip"
+    ],
+    "tinte": true,
+    "heroes": [
+      "gigante",
+      "split",
+      "asimetrico",
+      "lateral",
+      "tarjeta"
+    ],
+    "servicios": [
+      "lista",
+      "grid",
+      "bento",
+      "escalera"
+    ],
+    "decor": [
+      "grano",
+      "rejilla",
+      "diagonal",
+      "aros",
+      "ninguno"
+    ]
+  },
+  "pastel": {
+    "nombre": "Pastel",
+    "descripcion": "Rosados y salvia suaves, formas redondeadas, trato cercano.",
+    "modo": "claro",
+    "tokens": {
+      "bg": "#fdf4f0",
+      "fg": "#3a2a2f",
+      "muted": "#6e5a60",
+      "accent": "#a8456b",
+      "accentInk": "#ffffff",
+      "surface": "#f8e3e0",
+      "line": "#ecd0cc"
+    },
+    "radio": "24px",
+    "sombra": "none",
+    "hCase": "none",
+    "hTrack": "-0.01em",
+    "hWeight": 400,
+    "pares": [
+      "young-nunito",
+      "dmserif-jakarta",
+      "cormorant-figtree"
+    ],
+    "animaciones": [
+      "fade"
+    ],
+    "tinte": true,
+    "heroes": [
+      "gigante",
+      "split",
+      "asimetrico",
+      "lateral",
+      "tarjeta"
+    ],
+    "servicios": [
+      "lista",
+      "grid",
+      "bento",
+      "escalera"
+    ],
+    "decor": [
+      "grano",
+      "rejilla",
+      "diagonal",
+      "aros",
+      "ninguno"
+    ]
+  },
+  "tinta": {
+    "nombre": "Tinta",
+    "descripcion": "Azul noche y dorado, sobrio y confiable.",
+    "modo": "oscuro",
+    "tokens": {
+      "bg": "#0e1b2c",
+      "fg": "#eef0f3",
+      "muted": "#aab4c3",
+      "accent": "#d4b36a",
+      "accentInk": "#0e1b2c",
+      "surface": "#152840",
+      "line": "#26405f"
+    },
+    "radio": "2px",
+    "sombra": "none",
+    "hCase": "none",
+    "hTrack": "-0.01em",
+    "hWeight": 700,
+    "pares": [
+      "lora-worksans",
+      "playfair-manrope",
+      "baskerville-source"
+    ],
+    "animaciones": [
+      "clip",
+      "fade"
+    ],
+    "tinte": false,
+    "heroes": [
+      "gigante",
+      "split",
+      "asimetrico",
+      "lateral",
+      "tarjeta"
+    ],
+    "servicios": [
+      "lista",
+      "grid",
+      "bento",
+      "escalera"
+    ],
+    "decor": [
+      "grano",
+      "rejilla",
+      "diagonal",
+      "aros",
+      "ninguno"
+    ]
+  },
+  "sereno": {
+    "nombre": "Sereno",
+    "descripcion": "Salvia y azul profundo, calma y claridad.",
+    "modo": "claro",
+    "tokens": {
+      "bg": "#eef2ef",
+      "fg": "#1d2b2a",
+      "muted": "#4f625f",
+      "accent": "#2f5d7c",
+      "accentInk": "#ffffff",
+      "surface": "#dfe8e4",
+      "line": "#c5d4ce"
+    },
+    "radio": "16px",
+    "sombra": "none",
+    "hCase": "none",
+    "hTrack": "-0.02em",
+    "hWeight": 700,
+    "pares": [
+      "baskerville-source",
+      "fraunces-manrope",
+      "bricolage-dmsans"
+    ],
+    "animaciones": [
+      "fade",
+      "slide"
+    ],
+    "tinte": true,
+    "heroes": [
+      "gigante",
+      "split",
+      "asimetrico",
+      "lateral",
+      "tarjeta"
+    ],
+    "servicios": [
+      "lista",
+      "grid",
+      "bento",
+      "escalera"
+    ],
+    "decor": [
+      "grano",
+      "rejilla",
+      "diagonal",
+      "aros",
+      "ninguno"
+    ]
+  }
+}

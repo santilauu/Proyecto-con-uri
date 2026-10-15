@@ -1,0 +1,2700 @@
+{
+  "gimnasio": [
+    {
+      "clave": "pista",
+      "nombre": "Pista",
+      "rubro": "gimnasio",
+      "pareja": "archivo-grotesk",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f4f4f0",
+          "fg": "#111111",
+          "muted": "#555554",
+          "accent": "#cd0027",
+          "accentInk": "#ffffff",
+          "surface": "#e6e6e0",
+          "line": "#c7c7c3"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0d0d0d",
+          "fg": "#f5f5f5",
+          "muted": "#afafaf",
+          "accent": "#ff3b3b",
+          "accentInk": "#000000",
+          "surface": "#1a1a1a",
+          "line": "#3b3b3b"
+        }
+      }
+    },
+    {
+      "clave": "cancha",
+      "nombre": "Cancha",
+      "rubro": "gimnasio",
+      "pareja": "unbounded-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#ffffff",
+          "fg": "#0b0b12",
+          "muted": "#545459",
+          "accent": "#0057ff",
+          "accentInk": "#ffffff",
+          "surface": "#eef2ff",
+          "line": "#ceced0"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0b0b12",
+          "fg": "#f2f4ff",
+          "muted": "#adaeb8",
+          "accent": "#4d8dff",
+          "accentInk": "#000000",
+          "surface": "#161a2b",
+          "line": "#393a41"
+        }
+      }
+    },
+    {
+      "clave": "pesas",
+      "nombre": "Pesas",
+      "rubro": "gimnasio",
+      "pareja": "bricolage-dmsans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fff6ea",
+          "fg": "#1f1408",
+          "muted": "#62584c",
+          "accent": "#ae4309",
+          "accentInk": "#ffffff",
+          "surface": "#fde9d6",
+          "line": "#d2c9bd"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#17110a",
+          "fg": "#fff3e4",
+          "muted": "#b9afa3",
+          "accent": "#ff8a3d",
+          "accentInk": "#000000",
+          "surface": "#241a10",
+          "line": "#453e36"
+        }
+      }
+    },
+    {
+      "clave": "cardio",
+      "nombre": "Cardio",
+      "rubro": "gimnasio",
+      "pareja": "barlow-cond",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f0fff7",
+          "fg": "#0c2118",
+          "muted": "#50645b",
+          "accent": "#00764b",
+          "accentInk": "#ffffff",
+          "surface": "#dff5ea",
+          "line": "#c2d3ca"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0a1a14",
+          "fg": "#e9fff5",
+          "muted": "#a6bab2",
+          "accent": "#2ee59d",
+          "accentInk": "#000000",
+          "surface": "#12281f",
+          "line": "#374841"
+        }
+      }
+    },
+    {
+      "clave": "podio",
+      "nombre": "Podio",
+      "rubro": "gimnasio",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fbf9f2",
+          "fg": "#161616",
+          "muted": "#5b5a58",
+          "accent": "#7f600e",
+          "accentInk": "#ffffff",
+          "surface": "#efeadb",
+          "line": "#cdccc6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#111111",
+          "fg": "#f7f3e3",
+          "muted": "#b2afa4",
+          "accent": "#f0c040",
+          "accentInk": "#000000",
+          "surface": "#1c1c1c",
+          "line": "#3f3e3b"
+        }
+      }
+    }
+  ],
+  "estetica": [
+    {
+      "clave": "rosa-te",
+      "nombre": "Rosa té",
+      "rubro": "estetica",
+      "pareja": "cormorant-figtree",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fbf4f2",
+          "fg": "#3b2a2e",
+          "muted": "#6b5d5f",
+          "accent": "#9c4a5e",
+          "accentInk": "#ffffff",
+          "surface": "#f3e4e1",
+          "line": "#d5cccb"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1f1518",
+          "fg": "#f6ebe9",
+          "muted": "#b6abaa",
+          "accent": "#e0a0b0",
+          "accentInk": "#000000",
+          "surface": "#2c1f23",
+          "line": "#4a4042"
+        }
+      }
+    },
+    {
+      "clave": "marmol",
+      "nombre": "Mármol",
+      "rubro": "estetica",
+      "pareja": "playfair-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f7f5f2",
+          "fg": "#222124",
+          "muted": "#626162",
+          "accent": "#746554",
+          "accentInk": "#ffffff",
+          "surface": "#ece8e2",
+          "line": "#cccbc9"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#141316",
+          "fg": "#efeae2",
+          "muted": "#adaaa5",
+          "accent": "#c9b08c",
+          "accentInk": "#000000",
+          "surface": "#1f1d21",
+          "line": "#403e3f"
+        }
+      }
+    },
+    {
+      "clave": "lino",
+      "nombre": "Lino",
+      "rubro": "estetica",
+      "pareja": "instrument-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f3efe7",
+          "fg": "#2a2620",
+          "muted": "#66625c",
+          "accent": "#775d36",
+          "accentInk": "#ffffff",
+          "surface": "#e6dfd0",
+          "line": "#cbc7bf"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#181612",
+          "fg": "#f1ece2",
+          "muted": "#b0aca4",
+          "accent": "#d0ab6f",
+          "accentInk": "#000000",
+          "surface": "#242019",
+          "line": "#43413c"
+        }
+      }
+    },
+    {
+      "clave": "orquidea",
+      "nombre": "Orquídea",
+      "rubro": "estetica",
+      "pareja": "dmserif-jakarta",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f9f1f8",
+          "fg": "#2e1f2c",
+          "muted": "#6b5e69",
+          "accent": "#7d3c7a",
+          "accentInk": "#ffffff",
+          "surface": "#eedcec",
+          "line": "#d0c7cf"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1a121a",
+          "fg": "#f5ecf3",
+          "muted": "#b3abb2",
+          "accent": "#d595cf",
+          "accentInk": "#000000",
+          "surface": "#26192a",
+          "line": "#463e45"
+        }
+      }
+    },
+    {
+      "clave": "ceniza",
+      "nombre": "Ceniza",
+      "rubro": "estetica",
+      "pareja": "cormorant-figtree",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f2f2f0",
+          "fg": "#1e1e1e",
+          "muted": "#5e5e5d",
+          "accent": "#56665d",
+          "accentInk": "#ffffff",
+          "surface": "#e3e5e2",
+          "line": "#c8c8c6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#111413",
+          "fg": "#eef1ef",
+          "muted": "#acafad",
+          "accent": "#9fb5a8",
+          "accentInk": "#000000",
+          "surface": "#1b201e",
+          "line": "#3d403f"
+        }
+      }
+    }
+  ],
+  "medico": [
+    {
+      "clave": "clinica",
+      "nombre": "Clínica",
+      "rubro": "medico",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#ffffff",
+          "fg": "#14233a",
+          "muted": "#5a6575",
+          "accent": "#0a6e8a",
+          "accentInk": "#ffffff",
+          "surface": "#eaf4f7",
+          "line": "#d0d3d8"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0c1a2b",
+          "fg": "#eaf3fb",
+          "muted": "#a7b2bd",
+          "accent": "#5ccde6",
+          "accentInk": "#000000",
+          "surface": "#15263a",
+          "line": "#384555"
+        }
+      }
+    },
+    {
+      "clave": "consultorio",
+      "nombre": "Consultorio",
+      "rubro": "medico",
+      "pareja": "outfit-public",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f8fbfc",
+          "fg": "#1a2b33",
+          "muted": "#5d696f",
+          "accent": "#1d7468",
+          "accentInk": "#ffffff",
+          "surface": "#e4f1ee",
+          "line": "#ccd1d4"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0f1c22",
+          "fg": "#e8f4f3",
+          "muted": "#a7b3b4",
+          "accent": "#54c4b2",
+          "accentInk": "#000000",
+          "surface": "#173038",
+          "line": "#3a474c"
+        }
+      }
+    },
+    {
+      "clave": "calma",
+      "nombre": "Calma",
+      "rubro": "medico",
+      "pareja": "baskerville-source",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f5f8f5",
+          "fg": "#1d2f2a",
+          "muted": "#5e6b67",
+          "accent": "#2d6a4f",
+          "accentInk": "#ffffff",
+          "surface": "#e3ece6",
+          "line": "#cad0cc"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0f1c18",
+          "fg": "#e9f2ec",
+          "muted": "#a8b2ac",
+          "accent": "#7fc2a0",
+          "accentInk": "#000000",
+          "surface": "#18291f",
+          "line": "#3b4742"
+        }
+      }
+    },
+    {
+      "clave": "azul-sereno",
+      "nombre": "Azul sereno",
+      "rubro": "medico",
+      "pareja": "bricolage-dmsans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f2f7fb",
+          "fg": "#102a43",
+          "muted": "#54687a",
+          "accent": "#245d91",
+          "accentInk": "#ffffff",
+          "surface": "#dfeaf4",
+          "line": "#c5ced6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0b1d2d",
+          "fg": "#e6f0f9",
+          "muted": "#a4b1bc",
+          "accent": "#7fb3e6",
+          "accentInk": "#000000",
+          "surface": "#14293c",
+          "line": "#374756"
+        }
+      }
+    },
+    {
+      "clave": "blanco-limpio",
+      "nombre": "Blanco limpio",
+      "rubro": "medico",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fafafa",
+          "fg": "#1c1c1c",
+          "muted": "#5f5f5f",
+          "accent": "#0c745a",
+          "accentInk": "#ffffff",
+          "surface": "#ececec",
+          "line": "#cecece"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#121212",
+          "fg": "#f3f3f3",
+          "muted": "#afafaf",
+          "accent": "#3dd6a8",
+          "accentInk": "#000000",
+          "surface": "#1e1e1e",
+          "line": "#3f3f3f"
+        }
+      }
+    }
+  ],
+  "gastronomia": [
+    {
+      "clave": "brasa",
+      "nombre": "Brasa",
+      "rubro": "gastronomia",
+      "pareja": "fraunces-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fff4ea",
+          "fg": "#2a1409",
+          "muted": "#6a574d",
+          "accent": "#b3361b",
+          "accentInk": "#ffffff",
+          "surface": "#fbe5d2",
+          "line": "#d4c7bd"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1d0f08",
+          "fg": "#fff1e4",
+          "muted": "#bbada2",
+          "accent": "#ff7a4d",
+          "accentInk": "#000000",
+          "surface": "#2b1810",
+          "line": "#4a3c34"
+        }
+      }
+    },
+    {
+      "clave": "horno",
+      "nombre": "Horno",
+      "rubro": "gastronomia",
+      "pareja": "young-nunito",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fff8ef",
+          "fg": "#2d1c10",
+          "muted": "#6c5e53",
+          "accent": "#b83e0b",
+          "accentInk": "#ffffff",
+          "surface": "#f9e6cf",
+          "line": "#d5ccc2"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1f140d",
+          "fg": "#fdf0e0",
+          "muted": "#baaea1",
+          "accent": "#ff9a5c",
+          "accentInk": "#000000",
+          "surface": "#2c1d13",
+          "line": "#4b4037"
+        }
+      }
+    },
+    {
+      "clave": "mantel",
+      "nombre": "Mantel",
+      "rubro": "gastronomia",
+      "pareja": "dmserif-jakarta",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f7f3ec",
+          "fg": "#1f2a1a",
+          "muted": "#606659",
+          "accent": "#4d6b2f",
+          "accentInk": "#ffffff",
+          "surface": "#e7ebdc",
+          "line": "#cccbc2"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#121a0f",
+          "fg": "#eef3e5",
+          "muted": "#acb2a5",
+          "accent": "#9cc26d",
+          "accentInk": "#000000",
+          "surface": "#1d2a17",
+          "line": "#3e453a"
+        }
+      }
+    },
+    {
+      "clave": "vino",
+      "nombre": "Vino",
+      "rubro": "gastronomia",
+      "pareja": "playfair-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#faf5f4",
+          "fg": "#2b1116",
+          "muted": "#695559",
+          "accent": "#7a1f33",
+          "accentInk": "#ffffff",
+          "surface": "#f0e2e4",
+          "line": "#d1c7c8"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#170b0e",
+          "fg": "#f6eced",
+          "muted": "#b3a9aa",
+          "accent": "#e0808f",
+          "accentInk": "#000000",
+          "surface": "#251319",
+          "line": "#44383b"
+        }
+      }
+    },
+    {
+      "clave": "carbon",
+      "nombre": "Carbón",
+      "rubro": "gastronomia",
+      "pareja": "fraunces-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f4f1ec",
+          "fg": "#221f1b",
+          "muted": "#615e5a",
+          "accent": "#974d1a",
+          "accentInk": "#ffffff",
+          "surface": "#e7e1d8",
+          "line": "#cac7c2"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#161411",
+          "fg": "#f1ede6",
+          "muted": "#afaca6",
+          "accent": "#e39a55",
+          "accentInk": "#000000",
+          "surface": "#211e1a",
+          "line": "#423f3c"
+        }
+      }
+    }
+  ],
+  "panaderia": [
+    {
+      "clave": "trigo",
+      "nombre": "Trigo",
+      "rubro": "panaderia",
+      "pareja": "young-nunito",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fdf6e3",
+          "fg": "#3a2a14",
+          "muted": "#756752",
+          "accent": "#895b17",
+          "accentInk": "#ffffff",
+          "surface": "#f5e9c8",
+          "line": "#d6cdba"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1f1809",
+          "fg": "#fbf1d8",
+          "muted": "#b9b09a",
+          "accent": "#f0b84a",
+          "accentInk": "#000000",
+          "surface": "#2c210f",
+          "line": "#4b4332"
+        }
+      }
+    },
+    {
+      "clave": "masa",
+      "nombre": "Masa",
+      "rubro": "panaderia",
+      "pareja": "fraunces-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fff8f1",
+          "fg": "#3b2418",
+          "muted": "#766459",
+          "accent": "#a14d2a",
+          "accentInk": "#ffffff",
+          "surface": "#f7e6d6",
+          "line": "#d8cec6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1e120c",
+          "fg": "#fbefe4",
+          "muted": "#b9ada3",
+          "accent": "#e8906a",
+          "accentInk": "#000000",
+          "surface": "#2a1a12",
+          "line": "#4a3e37"
+        }
+      }
+    },
+    {
+      "clave": "miel",
+      "nombre": "Miel",
+      "rubro": "panaderia",
+      "pareja": "dmserif-jakarta",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fffaf0",
+          "fg": "#2b2112",
+          "muted": "#6b6255",
+          "accent": "#926200",
+          "accentInk": "#ffffff",
+          "surface": "#f7edd3",
+          "line": "#d5cfc4"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#171108",
+          "fg": "#fdf5e2",
+          "muted": "#b8b1a1",
+          "accent": "#ffc857",
+          "accentInk": "#000000",
+          "surface": "#241c0f",
+          "line": "#453f34"
+        }
+      }
+    },
+    {
+      "clave": "harina",
+      "nombre": "Harina",
+      "rubro": "panaderia",
+      "pareja": "young-nunito",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f7f4ee",
+          "fg": "#2e2a24",
+          "muted": "#6a6761",
+          "accent": "#566e43",
+          "accentInk": "#ffffff",
+          "surface": "#e8e8dc",
+          "line": "#cfccc6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#14130f",
+          "fg": "#f1ede3",
+          "muted": "#afaca3",
+          "accent": "#a4c384",
+          "accentInk": "#000000",
+          "surface": "#1e1c17",
+          "line": "#403f39"
+        }
+      }
+    },
+    {
+      "clave": "cacao",
+      "nombre": "Cacao",
+      "rubro": "panaderia",
+      "pareja": "fraunces-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f6efe9",
+          "fg": "#33221a",
+          "muted": "#6e6058",
+          "accent": "#6f4a32",
+          "accentInk": "#ffffff",
+          "surface": "#e9ddd2",
+          "line": "#cfc6c0"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#181210",
+          "fg": "#f3ebe4",
+          "muted": "#b1aaa4",
+          "accent": "#c99a72",
+          "accentInk": "#000000",
+          "surface": "#241b16",
+          "line": "#443d3a"
+        }
+      }
+    }
+  ],
+  "inmobiliaria": [
+    {
+      "clave": "llave",
+      "nombre": "Llave",
+      "rubro": "inmobiliaria",
+      "pareja": "playfair-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f8f7f4",
+          "fg": "#14213d",
+          "muted": "#586174",
+          "accent": "#7b633d",
+          "accentInk": "#ffffff",
+          "surface": "#ebe9e2",
+          "line": "#cacccf"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0e1626",
+          "fg": "#f1efe8",
+          "muted": "#adaeae",
+          "accent": "#d8b77e",
+          "accentInk": "#000000",
+          "surface": "#18243a",
+          "line": "#3b414d"
+        }
+      }
+    },
+    {
+      "clave": "horizonte",
+      "nombre": "Horizonte",
+      "rubro": "inmobiliaria",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#ffffff",
+          "fg": "#0f172a",
+          "muted": "#575d6a",
+          "accent": "#1d4ed8",
+          "accentInk": "#ffffff",
+          "surface": "#eef2fb",
+          "line": "#cfd1d4"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0b1120",
+          "fg": "#eef2ff",
+          "muted": "#aaaebc",
+          "accent": "#7aa2ff",
+          "accentInk": "#000000",
+          "surface": "#141d33",
+          "line": "#383e4d"
+        }
+      }
+    },
+    {
+      "clave": "piedra",
+      "nombre": "Piedra",
+      "rubro": "inmobiliaria",
+      "pareja": "cormorant-figtree",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f4f2ee",
+          "fg": "#26241f",
+          "muted": "#64625d",
+          "accent": "#6b5b3e",
+          "accentInk": "#ffffff",
+          "surface": "#e6e2da",
+          "line": "#cbc9c5"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#151411",
+          "fg": "#efebe3",
+          "muted": "#aeaba4",
+          "accent": "#cfb88f",
+          "accentInk": "#000000",
+          "surface": "#211f1a",
+          "line": "#413f3b"
+        }
+      }
+    },
+    {
+      "clave": "ladrillo",
+      "nombre": "Ladrillo",
+      "rubro": "inmobiliaria",
+      "pareja": "syne-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fbf4ef",
+          "fg": "#2e1c14",
+          "muted": "#6b5d56",
+          "accent": "#a4462a",
+          "accentInk": "#ffffff",
+          "surface": "#f1e2d7",
+          "line": "#d2c9c3"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#190f0b",
+          "fg": "#f8ece6",
+          "muted": "#b5aaa4",
+          "accent": "#e98d6b",
+          "accentInk": "#000000",
+          "surface": "#271a14",
+          "line": "#463b37"
+        }
+      }
+    },
+    {
+      "clave": "pizarra",
+      "nombre": "Pizarra",
+      "rubro": "inmobiliaria",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f3f5f7",
+          "fg": "#1f2933",
+          "muted": "#5f666e",
+          "accent": "#2f6f73",
+          "accentInk": "#ffffff",
+          "surface": "#e1e8eb",
+          "line": "#c9ccd0"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#10161c",
+          "fg": "#e9eef2",
+          "muted": "#a8adb2",
+          "accent": "#6fbcc0",
+          "accentInk": "#000000",
+          "surface": "#1a242c",
+          "line": "#3b4147"
+        }
+      }
+    }
+  ],
+  "estudio": [
+    {
+      "clave": "notaria",
+      "nombre": "Notaría",
+      "rubro": "estudio",
+      "pareja": "playfair-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f7f4ec",
+          "fg": "#1c2431",
+          "muted": "#5e6269",
+          "accent": "#7a5c2e",
+          "accentInk": "#ffffff",
+          "surface": "#ebe5d6",
+          "line": "#cbcac7"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0f141d",
+          "fg": "#f2efe6",
+          "muted": "#aeadaa",
+          "accent": "#d3b27a",
+          "accentInk": "#000000",
+          "surface": "#1a2130",
+          "line": "#3c4045"
+        }
+      }
+    },
+    {
+      "clave": "contaduria",
+      "nombre": "Contaduría",
+      "rubro": "estudio",
+      "pareja": "baskerville-source",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#ffffff",
+          "fg": "#1b2a3a",
+          "muted": "#5f6a75",
+          "accent": "#1f4e79",
+          "accentInk": "#ffffff",
+          "surface": "#eef2f6",
+          "line": "#d1d4d8"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0c1521",
+          "fg": "#eef3f8",
+          "muted": "#aab0b8",
+          "accent": "#8cb8e6",
+          "accentInk": "#000000",
+          "surface": "#14202e",
+          "line": "#39414c"
+        }
+      }
+    },
+    {
+      "clave": "estudio-verde",
+      "nombre": "Estudio verde",
+      "rubro": "estudio",
+      "pareja": "lora-worksans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f4f7f5",
+          "fg": "#1d302a",
+          "muted": "#5e6c67",
+          "accent": "#2c6b4f",
+          "accentInk": "#ffffff",
+          "surface": "#e2ebe6",
+          "line": "#c9cfcc"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0e1814",
+          "fg": "#e8f1ec",
+          "muted": "#a7b0ab",
+          "accent": "#7dc0a0",
+          "accentInk": "#000000",
+          "surface": "#17271f",
+          "line": "#3a433f"
+        }
+      }
+    },
+    {
+      "clave": "bordo",
+      "nombre": "Bordó",
+      "rubro": "estudio",
+      "pareja": "instrument-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#faf6f5",
+          "fg": "#2b1b1f",
+          "muted": "#695d5f",
+          "accent": "#7e2c3a",
+          "accentInk": "#ffffff",
+          "surface": "#efe3e4",
+          "line": "#d1caca"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#170d10",
+          "fg": "#f5eded",
+          "muted": "#b2aaab",
+          "accent": "#d98b98",
+          "accentInk": "#000000",
+          "surface": "#24161a",
+          "line": "#433a3c"
+        }
+      }
+    },
+    {
+      "clave": "gris-acero",
+      "nombre": "Gris acero",
+      "rubro": "estudio",
+      "pareja": "playfair-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f2f3f5",
+          "fg": "#1a1f26",
+          "muted": "#5b5f64",
+          "accent": "#4b5f77",
+          "accentInk": "#ffffff",
+          "surface": "#e3e6eb",
+          "line": "#c7c9cc"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0f1218",
+          "fg": "#eceef2",
+          "muted": "#aaacb1",
+          "accent": "#a6b8cf",
+          "accentInk": "#000000",
+          "surface": "#1a1f28",
+          "line": "#3b3e44"
+        }
+      }
+    }
+  ],
+  "veterinaria": [
+    {
+      "clave": "patitas",
+      "nombre": "Patitas",
+      "rubro": "veterinaria",
+      "pareja": "young-nunito",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fff9f0",
+          "fg": "#2b2a26",
+          "muted": "#6b6863",
+          "accent": "#a3560a",
+          "accentInk": "#ffffff",
+          "surface": "#fcebd6",
+          "line": "#d5d0c8"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1a1713",
+          "fg": "#fbf3e6",
+          "muted": "#b8b1a7",
+          "accent": "#ffb066",
+          "accentInk": "#000000",
+          "surface": "#26221b",
+          "line": "#47433d"
+        }
+      }
+    },
+    {
+      "clave": "pradera",
+      "nombre": "Pradera",
+      "rubro": "veterinaria",
+      "pareja": "outfit-public",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f6fbf4",
+          "fg": "#1d3322",
+          "muted": "#5e6f61",
+          "accent": "#2d7746",
+          "accentInk": "#ffffff",
+          "surface": "#e1f0e5",
+          "line": "#cbd3ca"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0e1a12",
+          "fg": "#e8f4ec",
+          "muted": "#a7b3ab",
+          "accent": "#6cd08c",
+          "accentInk": "#000000",
+          "surface": "#172a1e",
+          "line": "#3a463e"
+        }
+      }
+    },
+    {
+      "clave": "celeste",
+      "nombre": "Celeste",
+      "rubro": "veterinaria",
+      "pareja": "bricolage-dmsans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f2f9fd",
+          "fg": "#173247",
+          "muted": "#4e6475",
+          "accent": "#1f6fa8",
+          "accentInk": "#ffffff",
+          "surface": "#e0eef8",
+          "line": "#c6d1d9"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0b1c28",
+          "fg": "#e6f2fb",
+          "muted": "#a4b2bc",
+          "accent": "#7cc0f0",
+          "accentInk": "#000000",
+          "surface": "#14293a",
+          "line": "#374752"
+        }
+      }
+    },
+    {
+      "clave": "arena",
+      "nombre": "Arena",
+      "rubro": "veterinaria",
+      "pareja": "outfit-public",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#faf6ef",
+          "fg": "#2e2a22",
+          "muted": "#6b6760",
+          "accent": "#7c5f29",
+          "accentInk": "#ffffff",
+          "surface": "#efe7d8",
+          "line": "#d1cdc6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#17130c",
+          "fg": "#f5efe3",
+          "muted": "#b2ada3",
+          "accent": "#d6ae62",
+          "accentInk": "#000000",
+          "surface": "#231e15",
+          "line": "#433f37"
+        }
+      }
+    },
+    {
+      "clave": "menta",
+      "nombre": "Menta",
+      "rubro": "veterinaria",
+      "pareja": "young-nunito",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f3faf8",
+          "fg": "#1e3430",
+          "muted": "#536662",
+          "accent": "#247165",
+          "accentInk": "#ffffff",
+          "surface": "#e0f0ec",
+          "line": "#c8d2d0"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0d1b19",
+          "fg": "#e6f4f1",
+          "muted": "#a5b3b0",
+          "accent": "#6cd0bf",
+          "accentInk": "#000000",
+          "surface": "#163029",
+          "line": "#384644"
+        }
+      }
+    }
+  ],
+  "taller": [
+    {
+      "clave": "grafito",
+      "nombre": "Grafito",
+      "rubro": "taller",
+      "pareja": "barlow-cond",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f0f0ee",
+          "fg": "#1c1f22",
+          "muted": "#5c5e5f",
+          "accent": "#a8460f",
+          "accentInk": "#ffffff",
+          "surface": "#e2e2df",
+          "line": "#c6c6c5"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1c1f22",
+          "fg": "#f2f2f0",
+          "muted": "#b2b3b2",
+          "accent": "#ff7a1a",
+          "accentInk": "#000000",
+          "surface": "#26292d",
+          "line": "#47494b"
+        }
+      }
+    },
+    {
+      "clave": "acero",
+      "nombre": "Acero",
+      "rubro": "taller",
+      "pareja": "archivo-grotesk",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#ffffff",
+          "fg": "#111827",
+          "muted": "#585d68",
+          "accent": "#1d4ed8",
+          "accentInk": "#ffffff",
+          "surface": "#eceef2",
+          "line": "#cfd1d4"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0f1319",
+          "fg": "#f1f3f6",
+          "muted": "#adb0b4",
+          "accent": "#6b93ff",
+          "accentInk": "#000000",
+          "surface": "#1b2029",
+          "line": "#3c4045"
+        }
+      }
+    },
+    {
+      "clave": "aceite",
+      "nombre": "Aceite",
+      "rubro": "taller",
+      "pareja": "outfit-public",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fbf8ef",
+          "fg": "#22201a",
+          "muted": "#63615a",
+          "accent": "#815e08",
+          "accentInk": "#ffffff",
+          "surface": "#efe9d6",
+          "line": "#d0cdc4"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#151410",
+          "fg": "#f6f2e4",
+          "muted": "#b3afa4",
+          "accent": "#e6bd4a",
+          "accentInk": "#000000",
+          "surface": "#22211a",
+          "line": "#42403a"
+        }
+      }
+    },
+    {
+      "clave": "oxido",
+      "nombre": "Óxido",
+      "rubro": "taller",
+      "pareja": "barlow-cond",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#faf1ec",
+          "fg": "#2d1d16",
+          "muted": "#6a5d56",
+          "accent": "#a0431b",
+          "accentInk": "#ffffff",
+          "surface": "#f0e0d6",
+          "line": "#d1c7c1"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1a110d",
+          "fg": "#f8ece6",
+          "muted": "#b5aaa5",
+          "accent": "#ee8a5c",
+          "accentInk": "#000000",
+          "surface": "#261a14",
+          "line": "#463d38"
+        }
+      }
+    },
+    {
+      "clave": "taller-verde",
+      "nombre": "Taller verde",
+      "rubro": "taller",
+      "pareja": "archivo-grotesk",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f1f5f2",
+          "fg": "#1b2a22",
+          "muted": "#5b6760",
+          "accent": "#2f6b43",
+          "accentInk": "#ffffff",
+          "surface": "#e0e9e3",
+          "line": "#c6ccc8"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0d1511",
+          "fg": "#e8f0ea",
+          "muted": "#a6aea9",
+          "accent": "#7dbd8f",
+          "accentInk": "#000000",
+          "surface": "#172219",
+          "line": "#39413c"
+        }
+      }
+    }
+  ],
+  "psicologia": [
+    {
+      "clave": "refugio",
+      "nombre": "Refugio",
+      "rubro": "psicologia",
+      "pareja": "baskerville-source",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f6f3ee",
+          "fg": "#2b2d33",
+          "muted": "#5e5f62",
+          "accent": "#52647a",
+          "accentInk": "#ffffff",
+          "surface": "#e8e5df",
+          "line": "#cdcbc9"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#121317",
+          "fg": "#eeece7",
+          "muted": "#acaba9",
+          "accent": "#9db0c8",
+          "accentInk": "#000000",
+          "surface": "#1c1e24",
+          "line": "#3e3e41"
+        }
+      }
+    },
+    {
+      "clave": "brisa",
+      "nombre": "Brisa",
+      "rubro": "psicologia",
+      "pareja": "fraunces-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f3f7f7",
+          "fg": "#1e3335",
+          "muted": "#536466",
+          "accent": "#367070",
+          "accentInk": "#ffffff",
+          "surface": "#e0ecec",
+          "line": "#c8d0d0"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0c1819",
+          "fg": "#e6f1f1",
+          "muted": "#a5b0b0",
+          "accent": "#7fc4c4",
+          "accentInk": "#000000",
+          "surface": "#15272a",
+          "line": "#384344"
+        }
+      }
+    },
+    {
+      "clave": "lavanda",
+      "nombre": "Lavanda",
+      "rubro": "psicologia",
+      "pareja": "cormorant-figtree",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f7f4fa",
+          "fg": "#2e2839",
+          "muted": "#6a6573",
+          "accent": "#6d5a8a",
+          "accentInk": "#ffffff",
+          "surface": "#ebe5f1",
+          "line": "#cfcbd3"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#120f17",
+          "fg": "#eee9f4",
+          "muted": "#aca8b2",
+          "accent": "#b7a3d6",
+          "accentInk": "#000000",
+          "surface": "#1d1826",
+          "line": "#3e3b43"
+        }
+      }
+    },
+    {
+      "clave": "arcilla",
+      "nombre": "Arcilla",
+      "rubro": "psicologia",
+      "pareja": "fraunces-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f8f2ec",
+          "fg": "#352a24",
+          "muted": "#665c56",
+          "accent": "#8a5a44",
+          "accentInk": "#ffffff",
+          "surface": "#eee2d8",
+          "line": "#d1cac4"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#17110d",
+          "fg": "#f3ebe4",
+          "muted": "#b1aaa3",
+          "accent": "#d09a7e",
+          "accentInk": "#000000",
+          "surface": "#221a15",
+          "line": "#433d38"
+        }
+      }
+    },
+    {
+      "clave": "musgo",
+      "nombre": "Musgo",
+      "rubro": "psicologia",
+      "pareja": "baskerville-source",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f2f4ef",
+          "fg": "#25301f",
+          "muted": "#586153",
+          "accent": "#586b3f",
+          "accentInk": "#ffffff",
+          "surface": "#e3e9da",
+          "line": "#c9cdc5"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#10140c",
+          "fg": "#eaf0e3",
+          "muted": "#a9aea3",
+          "accent": "#a9c489",
+          "accentInk": "#000000",
+          "surface": "#1a2215",
+          "line": "#3c4037"
+        }
+      }
+    }
+  ],
+  "floreria": [
+    {
+      "clave": "petalo",
+      "nombre": "Pétalo",
+      "rubro": "floreria",
+      "pareja": "cormorant-figtree",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fdf7f8",
+          "fg": "#3a2630",
+          "muted": "#75656c",
+          "accent": "#a34a63",
+          "accentInk": "#ffffff",
+          "surface": "#f5e6ea",
+          "line": "#d6cdd0"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1c1217",
+          "fg": "#f8eef1",
+          "muted": "#b6acb0",
+          "accent": "#f29bb2",
+          "accentInk": "#000000",
+          "surface": "#281b22",
+          "line": "#483e43"
+        }
+      }
+    },
+    {
+      "clave": "hoja",
+      "nombre": "Hoja",
+      "rubro": "floreria",
+      "pareja": "dmserif-jakarta",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f5f8f2",
+          "fg": "#213422",
+          "muted": "#566556",
+          "accent": "#467135",
+          "accentInk": "#ffffff",
+          "surface": "#e5eedf",
+          "line": "#cbd1c8"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0f170d",
+          "fg": "#e9f2e6",
+          "muted": "#a8b0a5",
+          "accent": "#97c97e",
+          "accentInk": "#000000",
+          "surface": "#172616",
+          "line": "#3b4338"
+        }
+      }
+    },
+    {
+      "clave": "lila",
+      "nombre": "Lila",
+      "rubro": "floreria",
+      "pareja": "instrument-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f8f6fb",
+          "fg": "#2b2536",
+          "muted": "#696471",
+          "accent": "#6a4d9a",
+          "accentInk": "#ffffff",
+          "surface": "#ece7f4",
+          "line": "#cfccd4"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#14101b",
+          "fg": "#efeaf6",
+          "muted": "#ada9b4",
+          "accent": "#b89ae0",
+          "accentInk": "#000000",
+          "surface": "#1e1828",
+          "line": "#403c47"
+        }
+      }
+    },
+    {
+      "clave": "durazno",
+      "nombre": "Durazno",
+      "rubro": "floreria",
+      "pareja": "dmserif-jakarta",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fff7f2",
+          "fg": "#3a2419",
+          "muted": "#75635a",
+          "accent": "#a35231",
+          "accentInk": "#ffffff",
+          "surface": "#f8e8dd",
+          "line": "#d8cdc7"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1c120d",
+          "fg": "#fbf0e8",
+          "muted": "#b8ada6",
+          "accent": "#f29a74",
+          "accentInk": "#000000",
+          "surface": "#2a1b13",
+          "line": "#493e39"
+        }
+      }
+    },
+    {
+      "clave": "verde-blanco",
+      "nombre": "Blanco y verde",
+      "rubro": "floreria",
+      "pareja": "cormorant-figtree",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fafcf9",
+          "fg": "#1f2e25",
+          "muted": "#616c65",
+          "accent": "#3f7258",
+          "accentInk": "#ffffff",
+          "surface": "#e6efe9",
+          "line": "#ced3cf"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0e1612",
+          "fg": "#e9f2ec",
+          "muted": "#a7b0ab",
+          "accent": "#86c2a2",
+          "accentInk": "#000000",
+          "surface": "#18261e",
+          "line": "#3a423e"
+        }
+      }
+    }
+  ],
+  "optica": [
+    {
+      "clave": "lente",
+      "nombre": "Lente",
+      "rubro": "optica",
+      "pareja": "syne-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f5f7fb",
+          "fg": "#141a2b",
+          "muted": "#575c69",
+          "accent": "#3654d6",
+          "accentInk": "#ffffff",
+          "surface": "#e6eaf6",
+          "line": "#c8cbd1"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0c1020",
+          "fg": "#eef1fb",
+          "muted": "#aaadb9",
+          "accent": "#8ea3ff",
+          "accentInk": "#000000",
+          "surface": "#161c31",
+          "line": "#393d4c"
+        }
+      }
+    },
+    {
+      "clave": "cristal",
+      "nombre": "Cristal",
+      "rubro": "optica",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#ffffff",
+          "fg": "#1b1f24",
+          "muted": "#5f6266",
+          "accent": "#0e7490",
+          "accentInk": "#ffffff",
+          "surface": "#e8f3f6",
+          "line": "#d1d2d3"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0a1418",
+          "fg": "#e9f5f8",
+          "muted": "#a6b2b5",
+          "accent": "#5ccde0",
+          "accentInk": "#000000",
+          "surface": "#132129",
+          "line": "#374145"
+        }
+      }
+    },
+    {
+      "clave": "carey",
+      "nombre": "Carey",
+      "rubro": "optica",
+      "pareja": "outfit-public",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#faf5ea",
+          "fg": "#2c2116",
+          "muted": "#6a6156",
+          "accent": "#8b5a2b",
+          "accentInk": "#ffffff",
+          "surface": "#f1e6d3",
+          "line": "#d1cbc0"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#171109",
+          "fg": "#f7efe0",
+          "muted": "#b4aca0",
+          "accent": "#d69a5e",
+          "accentInk": "#000000",
+          "surface": "#241b11",
+          "line": "#443d34"
+        }
+      }
+    },
+    {
+      "clave": "grafito-verde",
+      "nombre": "Grafito verde",
+      "rubro": "optica",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f2f5f3",
+          "fg": "#1a2621",
+          "muted": "#5b6460",
+          "accent": "#1e6b52",
+          "accentInk": "#ffffff",
+          "surface": "#e0e9e4",
+          "line": "#c7ccc9"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0c1512",
+          "fg": "#e6eee9",
+          "muted": "#a5ada8",
+          "accent": "#66c4a0",
+          "accentInk": "#000000",
+          "surface": "#16231d",
+          "line": "#38403d"
+        }
+      }
+    },
+    {
+      "clave": "negro-mate",
+      "nombre": "Negro mate",
+      "rubro": "optica",
+      "pareja": "syne-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fafafa",
+          "fg": "#111111",
+          "muted": "#575757",
+          "accent": "#b4236b",
+          "accentInk": "#ffffff",
+          "surface": "#ececec",
+          "line": "#cbcbcb"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0b0b0b",
+          "fg": "#f2f2f2",
+          "muted": "#adadad",
+          "accent": "#ff7eb3",
+          "accentInk": "#000000",
+          "surface": "#1a1a1a",
+          "line": "#393939"
+        }
+      }
+    }
+  ],
+  "iglesia": [
+    {
+      "clave": "vitral",
+      "nombre": "Vitral",
+      "rubro": "iglesia",
+      "pareja": "lora-worksans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fbf8f2",
+          "fg": "#2a2118",
+          "muted": "#696259",
+          "accent": "#7b4f1d",
+          "accentInk": "#ffffff",
+          "surface": "#f1eadb",
+          "line": "#d1cdc6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#15110b",
+          "fg": "#f4eee2",
+          "muted": "#b1aca2",
+          "accent": "#d9a85c",
+          "accentInk": "#000000",
+          "surface": "#211a12",
+          "line": "#423d36"
+        }
+      }
+    },
+    {
+      "clave": "cruz",
+      "nombre": "Cruz",
+      "rubro": "iglesia",
+      "pareja": "baskerville-source",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#ffffff",
+          "fg": "#1e2a3a",
+          "muted": "#626a75",
+          "accent": "#7a1e2c",
+          "accentInk": "#ffffff",
+          "surface": "#f2eef0",
+          "line": "#d2d4d8"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0e1520",
+          "fg": "#f1f0ec",
+          "muted": "#adaeaf",
+          "accent": "#e08c98",
+          "accentInk": "#000000",
+          "surface": "#18222f",
+          "line": "#3b4149"
+        }
+      }
+    },
+    {
+      "clave": "olivo",
+      "nombre": "Olivo",
+      "rubro": "iglesia",
+      "pareja": "cormorant-figtree",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f5f6f0",
+          "fg": "#26301f",
+          "muted": "#646b5e",
+          "accent": "#5e6e2e",
+          "accentInk": "#ffffff",
+          "surface": "#e6ebd9",
+          "line": "#cccec6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#11140c",
+          "fg": "#eef1e5",
+          "muted": "#acafa4",
+          "accent": "#b3c673",
+          "accentInk": "#000000",
+          "surface": "#1a2114",
+          "line": "#3d4037"
+        }
+      }
+    },
+    {
+      "clave": "azul-liturgico",
+      "nombre": "Azul litúrgico",
+      "rubro": "iglesia",
+      "pareja": "lora-worksans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f3f6fa",
+          "fg": "#1b2a44",
+          "muted": "#5c677b",
+          "accent": "#2c5b94",
+          "accentInk": "#ffffff",
+          "surface": "#e3eaf3",
+          "line": "#c8cdd6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0c1526",
+          "fg": "#ebf1f9",
+          "muted": "#a8afba",
+          "accent": "#86b0e6",
+          "accentInk": "#000000",
+          "surface": "#15223a",
+          "line": "#394150"
+        }
+      }
+    },
+    {
+      "clave": "sol-de-tarde",
+      "nombre": "Sol de tarde",
+      "rubro": "iglesia",
+      "pareja": "baskerville-source",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fdf7ee",
+          "fg": "#2f2416",
+          "muted": "#6d6357",
+          "accent": "#8f5a13",
+          "accentInk": "#ffffff",
+          "surface": "#f5ead8",
+          "line": "#d4cdc3"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#17120a",
+          "fg": "#f8efe0",
+          "muted": "#b5ada0",
+          "accent": "#e8b565",
+          "accentInk": "#000000",
+          "surface": "#241c10",
+          "line": "#443e35"
+        }
+      }
+    }
+  ],
+  "sindicato": [
+    {
+      "clave": "bandera",
+      "nombre": "Bandera",
+      "rubro": "sindicato",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#ffffff",
+          "fg": "#14213d",
+          "muted": "#5a6477",
+          "accent": "#1d4f91",
+          "accentInk": "#ffffff",
+          "surface": "#eef3fa",
+          "line": "#d0d3d8"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0b1424",
+          "fg": "#eef3fb",
+          "muted": "#aab0bb",
+          "accent": "#6ea3ec",
+          "accentInk": "#000000",
+          "surface": "#13203a",
+          "line": "#38414f"
+        }
+      }
+    },
+    {
+      "clave": "union",
+      "nombre": "Unión",
+      "rubro": "sindicato",
+      "pareja": "lora-worksans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f7f8fa",
+          "fg": "#1f2937",
+          "muted": "#606772",
+          "accent": "#b91c1c",
+          "accentInk": "#ffffff",
+          "surface": "#ebedf2",
+          "line": "#cccfd3"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0f1419",
+          "fg": "#eef1f5",
+          "muted": "#abafb3",
+          "accent": "#f08080",
+          "accentInk": "#000000",
+          "surface": "#1a1f27",
+          "line": "#3c4045"
+        }
+      }
+    },
+    {
+      "clave": "obrero",
+      "nombre": "Obrero",
+      "rubro": "sindicato",
+      "pareja": "bricolage-dmsans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fdf8f0",
+          "fg": "#2a2118",
+          "muted": "#696259",
+          "accent": "#9a5b13",
+          "accentInk": "#ffffff",
+          "surface": "#f4eadb",
+          "line": "#d3cdc5"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#17110a",
+          "fg": "#f7f0e4",
+          "muted": "#b4ada3",
+          "accent": "#e5a55a",
+          "accentInk": "#000000",
+          "surface": "#221a10",
+          "line": "#443e36"
+        }
+      }
+    },
+    {
+      "clave": "verde-trabajo",
+      "nombre": "Verde trabajo",
+      "rubro": "sindicato",
+      "pareja": "baskerville-source",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f4f8f5",
+          "fg": "#17301f",
+          "muted": "#596c5f",
+          "accent": "#1f6b3a",
+          "accentInk": "#ffffff",
+          "surface": "#e1ece4",
+          "line": "#c8d0ca"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0b1810",
+          "fg": "#e6f1e9",
+          "muted": "#a4b0a8",
+          "accent": "#74c28f",
+          "accentInk": "#000000",
+          "surface": "#15271b",
+          "line": "#37433b"
+        }
+      }
+    },
+    {
+      "clave": "gris-institucional",
+      "nombre": "Gris institucional",
+      "rubro": "sindicato",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f5f5f5",
+          "fg": "#1c1c1c",
+          "muted": "#5d5d5d",
+          "accent": "#374151",
+          "accentInk": "#ffffff",
+          "surface": "#e6e6e6",
+          "line": "#cacaca"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#101010",
+          "fg": "#f0f0f0",
+          "muted": "#adadad",
+          "accent": "#b7c0cc",
+          "accentInk": "#000000",
+          "surface": "#1c1c1c",
+          "line": "#3d3d3d"
+        }
+      }
+    }
+  ],
+  "hotel": [
+    {
+      "clave": "bahia",
+      "nombre": "Bahía",
+      "rubro": "hotel",
+      "pareja": "playfair-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f6f8f7",
+          "fg": "#14302b",
+          "muted": "#586c68",
+          "accent": "#1d6b5e",
+          "accentInk": "#ffffff",
+          "surface": "#e3ece9",
+          "line": "#c9d0ce"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0b1a17",
+          "fg": "#eef5f2",
+          "muted": "#aab3b0",
+          "accent": "#78c2b4",
+          "accentInk": "#000000",
+          "surface": "#132a25",
+          "line": "#384643"
+        }
+      }
+    },
+    {
+      "clave": "marfil",
+      "nombre": "Marfil",
+      "rubro": "hotel",
+      "pareja": "cormorant-figtree",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fbf8f1",
+          "fg": "#2a2418",
+          "muted": "#696459",
+          "accent": "#7e6026",
+          "accentInk": "#ffffff",
+          "surface": "#f0e9d8",
+          "line": "#d1cec6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#14120a",
+          "fg": "#f5f0e3",
+          "muted": "#b2ada2",
+          "accent": "#d9bb76",
+          "accentInk": "#000000",
+          "surface": "#201c12",
+          "line": "#413e35"
+        }
+      }
+    },
+    {
+      "clave": "terraza",
+      "nombre": "Terraza",
+      "rubro": "hotel",
+      "pareja": "dmserif-jakarta",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fbf4ef",
+          "fg": "#2e1d17",
+          "muted": "#6b5e58",
+          "accent": "#9d4f2c",
+          "accentInk": "#ffffff",
+          "surface": "#f2e4da",
+          "line": "#d2c9c4"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#170f0b",
+          "fg": "#f8efe9",
+          "muted": "#b5aca6",
+          "accent": "#eb9a72",
+          "accentInk": "#000000",
+          "surface": "#221711",
+          "line": "#443c37"
+        }
+      }
+    },
+    {
+      "clave": "noche",
+      "nombre": "Noche",
+      "rubro": "hotel",
+      "pareja": "playfair-manrope",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f3f3f7",
+          "fg": "#1b1d2a",
+          "muted": "#5c5d68",
+          "accent": "#41457a",
+          "accentInk": "#ffffff",
+          "surface": "#e4e5ee",
+          "line": "#c8c8ce"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0d0e16",
+          "fg": "#eeeef6",
+          "muted": "#ababb3",
+          "accent": "#a9aee8",
+          "accentInk": "#000000",
+          "surface": "#181a26",
+          "line": "#3a3b43"
+        }
+      }
+    },
+    {
+      "clave": "playa",
+      "nombre": "Playa",
+      "rubro": "hotel",
+      "pareja": "cormorant-figtree",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f4f9fb",
+          "fg": "#123040",
+          "muted": "#566c78",
+          "accent": "#14668a",
+          "accentInk": "#ffffff",
+          "surface": "#e0edf3",
+          "line": "#c7d1d6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0a1820",
+          "fg": "#e6f2f8",
+          "muted": "#a4b1b7",
+          "accent": "#6cbce2",
+          "accentInk": "#000000",
+          "surface": "#132735",
+          "line": "#36444b"
+        }
+      }
+    }
+  ],
+  "academia": [
+    {
+      "clave": "aula",
+      "nombre": "Aula",
+      "rubro": "academia",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#ffffff",
+          "fg": "#1e293b",
+          "muted": "#626976",
+          "accent": "#2563eb",
+          "accentInk": "#ffffff",
+          "surface": "#eef3fd",
+          "line": "#d2d4d8"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0f172a",
+          "fg": "#e2e8f0",
+          "muted": "#a3a9b5",
+          "accent": "#7ea6ff",
+          "accentInk": "#000000",
+          "surface": "#1a2540",
+          "line": "#394152"
+        }
+      }
+    },
+    {
+      "clave": "pizarron",
+      "nombre": "Pizarrón",
+      "rubro": "academia",
+      "pareja": "lora-worksans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f5f7f4",
+          "fg": "#1f2a24",
+          "muted": "#5f6862",
+          "accent": "#2d6a4f",
+          "accentInk": "#ffffff",
+          "surface": "#e3ebe5",
+          "line": "#caceca"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0e1612",
+          "fg": "#e7efe9",
+          "muted": "#a6aea8",
+          "accent": "#7bc39c",
+          "accentInk": "#000000",
+          "surface": "#172219",
+          "line": "#39413d"
+        }
+      }
+    },
+    {
+      "clave": "cuaderno",
+      "nombre": "Cuaderno",
+      "rubro": "academia",
+      "pareja": "bricolage-dmsans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fdf9ef",
+          "fg": "#2b2412",
+          "muted": "#6a6454",
+          "accent": "#995d07",
+          "accentInk": "#ffffff",
+          "surface": "#f5eedb",
+          "line": "#d3cec3"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#17130a",
+          "fg": "#f7f0df",
+          "muted": "#b4ae9f",
+          "accent": "#e9b45a",
+          "accentInk": "#000000",
+          "surface": "#221b10",
+          "line": "#443f35"
+        }
+      }
+    },
+    {
+      "clave": "tiza",
+      "nombre": "Tiza",
+      "rubro": "academia",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f7f7f9",
+          "fg": "#1a1a24",
+          "muted": "#5c5c64",
+          "accent": "#4338ca",
+          "accentInk": "#ffffff",
+          "surface": "#e8e8f1",
+          "line": "#cbcbce"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0e0e16",
+          "fg": "#ececf4",
+          "muted": "#a9a9b1",
+          "accent": "#a5a0ff",
+          "accentInk": "#000000",
+          "surface": "#1a1a26",
+          "line": "#3a3a42"
+        }
+      }
+    },
+    {
+      "clave": "mapa",
+      "nombre": "Mapa",
+      "rubro": "academia",
+      "pareja": "lora-worksans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f3f7f9",
+          "fg": "#17303a",
+          "muted": "#596c73",
+          "accent": "#17708a",
+          "accentInk": "#ffffff",
+          "surface": "#e0ecf0",
+          "line": "#c7cfd3"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0a1a20",
+          "fg": "#e5f1f6",
+          "muted": "#a3b1b6",
+          "accent": "#6ac3dd",
+          "accentInk": "#000000",
+          "surface": "#132830",
+          "line": "#36454b"
+        }
+      }
+    }
+  ],
+  "servicios": [
+    {
+      "clave": "oficio",
+      "nombre": "Oficio",
+      "rubro": "servicios",
+      "pareja": "outfit-public",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f6f7f9",
+          "fg": "#1e2a38",
+          "muted": "#5f6872",
+          "accent": "#1e6091",
+          "accentInk": "#ffffff",
+          "surface": "#e4eaf1",
+          "line": "#cbced2"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0d1520",
+          "fg": "#e8eef5",
+          "muted": "#a6adb5",
+          "accent": "#71b6e3",
+          "accentInk": "#000000",
+          "surface": "#162232",
+          "line": "#39404b"
+        }
+      }
+    },
+    {
+      "clave": "pulso",
+      "nombre": "Pulso",
+      "rubro": "servicios",
+      "pareja": "bricolage-dmsans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fbfaf6",
+          "fg": "#232017",
+          "muted": "#64615a",
+          "accent": "#b2430e",
+          "accentInk": "#ffffff",
+          "surface": "#f1ebdf",
+          "line": "#d0cec9"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#15120c",
+          "fg": "#f5f1e6",
+          "muted": "#b2aea5",
+          "accent": "#f09a63",
+          "accentInk": "#000000",
+          "surface": "#211d15",
+          "line": "#423f38"
+        }
+      }
+    },
+    {
+      "clave": "practico",
+      "nombre": "Práctico",
+      "rubro": "servicios",
+      "pareja": "sora-inter",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#ffffff",
+          "fg": "#1a1d21",
+          "muted": "#5f6164",
+          "accent": "#2b7a4b",
+          "accentInk": "#ffffff",
+          "surface": "#ecf1ee",
+          "line": "#d1d2d3"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0c0f11",
+          "fg": "#eef1f3",
+          "muted": "#aaadaf",
+          "accent": "#7fcf9d",
+          "accentInk": "#000000",
+          "surface": "#181c20",
+          "line": "#393c3e"
+        }
+      }
+    },
+    {
+      "clave": "ladrillo-claro",
+      "nombre": "Ladrillo claro",
+      "rubro": "servicios",
+      "pareja": "outfit-public",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f9f4f0",
+          "fg": "#2b1f19",
+          "muted": "#695f5a",
+          "accent": "#7d3f29",
+          "accentInk": "#ffffff",
+          "surface": "#efe5dd",
+          "line": "#d0c9c5"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#150f0c",
+          "fg": "#f4ece7",
+          "muted": "#b1aaa5",
+          "accent": "#d99a81",
+          "accentInk": "#000000",
+          "surface": "#21170f",
+          "line": "#423b38"
+        }
+      }
+    },
+    {
+      "clave": "pizarra-servicio",
+      "nombre": "Pizarra servicio",
+      "rubro": "servicios",
+      "pareja": "bricolage-dmsans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f2f4f5",
+          "fg": "#1d2427",
+          "muted": "#5d6265",
+          "accent": "#3d5a66",
+          "accentInk": "#ffffff",
+          "surface": "#e1e7ea",
+          "line": "#c7cacc"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0e1316",
+          "fg": "#e8eef1",
+          "muted": "#a7acaf",
+          "accent": "#92b9c7",
+          "accentInk": "#000000",
+          "surface": "#172024",
+          "line": "#3a3f42"
+        }
+      }
+    }
+  ],
+  "ferreteria": [
+    {
+      "clave": "tuerca",
+      "nombre": "Tuerca",
+      "rubro": "ferreteria",
+      "pareja": "archivo-grotesk",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f4f3ef",
+          "fg": "#1a1a1a",
+          "muted": "#5b5b5a",
+          "accent": "#ae3a0c",
+          "accentInk": "#ffffff",
+          "surface": "#e6e4de",
+          "line": "#c8c8c4"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#121212",
+          "fg": "#f2f2f0",
+          "muted": "#afafad",
+          "accent": "#ff8a4c",
+          "accentInk": "#000000",
+          "surface": "#1e1e1e",
+          "line": "#3f3f3e"
+        }
+      }
+    },
+    {
+      "clave": "clavo",
+      "nombre": "Clavo",
+      "rubro": "ferreteria",
+      "pareja": "barlow-cond",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fbfbf7",
+          "fg": "#222222",
+          "muted": "#636362",
+          "accent": "#2f5fa7",
+          "accentInk": "#ffffff",
+          "surface": "#e7e7e1",
+          "line": "#d0d0cc"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#111111",
+          "fg": "#efefe9",
+          "muted": "#acaca8",
+          "accent": "#7fa9e8",
+          "accentInk": "#000000",
+          "surface": "#1d1d1d",
+          "line": "#3d3d3c"
+        }
+      }
+    },
+    {
+      "clave": "caja-herramientas",
+      "nombre": "Caja de herramientas",
+      "rubro": "ferreteria",
+      "pareja": "outfit-public",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#faf6ee",
+          "fg": "#2c2a24",
+          "muted": "#6a6761",
+          "accent": "#8b6018",
+          "accentInk": "#ffffff",
+          "surface": "#efe8d9",
+          "line": "#d1cdc6"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#15130e",
+          "fg": "#f6f1e5",
+          "muted": "#b3aea5",
+          "accent": "#e0b467",
+          "accentInk": "#000000",
+          "surface": "#221f18",
+          "line": "#423f39"
+        }
+      }
+    },
+    {
+      "clave": "acero-frio",
+      "nombre": "Acero frío",
+      "rubro": "ferreteria",
+      "pareja": "barlow-cond",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f0f3f5",
+          "fg": "#1b2329",
+          "muted": "#5b6166",
+          "accent": "#2c6a8e",
+          "accentInk": "#ffffff",
+          "surface": "#dfe6eb",
+          "line": "#c5c9cc"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0c1216",
+          "fg": "#e6edf2",
+          "muted": "#a5abb0",
+          "accent": "#78b3d4",
+          "accentInk": "#000000",
+          "surface": "#162027",
+          "line": "#383e42"
+        }
+      }
+    },
+    {
+      "clave": "verde-taller",
+      "nombre": "Verde taller",
+      "rubro": "ferreteria",
+      "pareja": "archivo-grotesk",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f3f6f2",
+          "fg": "#1e2a1f",
+          "muted": "#5e675e",
+          "accent": "#387428",
+          "accentInk": "#ffffff",
+          "surface": "#e2eadf",
+          "line": "#c8cdc8"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0e140d",
+          "fg": "#e8f0e5",
+          "muted": "#a7aea4",
+          "accent": "#8fd17a",
+          "accentInk": "#000000",
+          "surface": "#18221a",
+          "line": "#3a4038"
+        }
+      }
+    }
+  ],
+  "local": [
+    {
+      "clave": "almacen",
+      "nombre": "Almacén",
+      "rubro": "local",
+      "pareja": "bricolage-dmsans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fbf8f1",
+          "fg": "#2a2620",
+          "muted": "#69655f",
+          "accent": "#a2461f",
+          "accentInk": "#ffffff",
+          "surface": "#f0eadf",
+          "line": "#d1cec7"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#15130f",
+          "fg": "#f5f1e8",
+          "muted": "#b2aea7",
+          "accent": "#e88b5c",
+          "accentInk": "#000000",
+          "surface": "#211d17",
+          "line": "#423f3a"
+        }
+      }
+    },
+    {
+      "clave": "barrio",
+      "nombre": "Barrio",
+      "rubro": "local",
+      "pareja": "outfit-public",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f6f8f3",
+          "fg": "#1f2b1d",
+          "muted": "#60695d",
+          "accent": "#3c742c",
+          "accentInk": "#ffffff",
+          "surface": "#e3ecdd",
+          "line": "#cbcfc8"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0e140c",
+          "fg": "#e9f1e4",
+          "muted": "#a7afa3",
+          "accent": "#8fcf78",
+          "accentInk": "#000000",
+          "surface": "#17200f",
+          "line": "#3a4037"
+        }
+      }
+    },
+    {
+      "clave": "vereda",
+      "nombre": "Vereda",
+      "rubro": "local",
+      "pareja": "young-nunito",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#fff8f2",
+          "fg": "#33241b",
+          "muted": "#70645b",
+          "accent": "#a54d24",
+          "accentInk": "#ffffff",
+          "surface": "#f8e8dc",
+          "line": "#d6cec7"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#1b130e",
+          "fg": "#fbf0e7",
+          "muted": "#b8aea6",
+          "accent": "#f29a6c",
+          "accentInk": "#000000",
+          "surface": "#251a13",
+          "line": "#483f39"
+        }
+      }
+    },
+    {
+      "clave": "esquina",
+      "nombre": "Esquina",
+      "rubro": "local",
+      "pareja": "outfit-public",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#f4f6fa",
+          "fg": "#1d2433",
+          "muted": "#5e636f",
+          "accent": "#3157a6",
+          "accentInk": "#ffffff",
+          "surface": "#e3e9f3",
+          "line": "#c9ccd2"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0c111c",
+          "fg": "#e7edf6",
+          "muted": "#a5abb5",
+          "accent": "#87a8ea",
+          "accentInk": "#000000",
+          "surface": "#161d2c",
+          "line": "#383d48"
+        }
+      }
+    },
+    {
+      "clave": "mostrador",
+      "nombre": "Mostrador",
+      "rubro": "local",
+      "pareja": "bricolage-dmsans",
+      "paleta": {
+        "claro": {
+          "modo": "claro",
+          "bg": "#ffffff",
+          "fg": "#222222",
+          "muted": "#646464",
+          "accent": "#0f766e",
+          "accentInk": "#ffffff",
+          "surface": "#ecf4f3",
+          "line": "#d3d3d3"
+        },
+        "oscuro": {
+          "modo": "oscuro",
+          "bg": "#0f0f0f",
+          "fg": "#f1f1f1",
+          "muted": "#adadad",
+          "accent": "#5ed0c4",
+          "accentInk": "#000000",
+          "surface": "#1b1b1b",
+          "line": "#3c3c3c"
+        }
+      }
+    }
+  ]
+}

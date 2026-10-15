@@ -1,0 +1,376 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from './Nav.astro';
+import { creditos } from '../lib/sitio.js';
+
+interface Props { cliente: any; adn: any; demo?: boolean }
+const { cliente, adn, demo = false } = Astro.props;
+
+const digitos = (cliente.whatsapp || cliente.telefono || '').replace(/\D/g, '');
+const wa = digitos
+  ? `https://wa.me/${digitos}?text=${encodeURIComponent(`Hola ${cliente.nombre}, vi su página y quería consultar.`)}`
+  : '#contacto';
+const ig = cliente.instagram ? `https://instagram.com/${cliente.instagram.replace('@', '')}` : '';
+const fb = cliente.facebook || '';
+const maps = cliente.direccion && !cliente.direccion.startsWith('[')
+  ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cliente.direccion)}`
+  : '';
+const inicial = cliente.nombre.trim().charAt(0).toUpperCase();
+const servicios: { titulo: string; texto: string }[] = cliente.servicios;
+const marquee = [...servicios, ...servicios].map((s) => s.titulo);
+const fotos: { src: string; alt: string; w: number; h: number }[] = cliente.media?.fotos ?? [];
+const videos: { src: string; type: string }[] = cliente.media?.videos ?? [];
+const precios: { item: string; monto: string }[] = cliente.precios ?? [];
+const equipo: string = cliente.equipo ?? '';
+const faq: { q: string; a: string }[] = cliente.faq ?? [];
+const portada = fotos[0];
+const galeria = fotos.slice(adn.hero === 'mosaico' ? Math.min(3, fotos.length) : (portada ? 1 : 0));
+const datosLayout: string = adn.datosLayout ?? 'columnas';
+const galeriaLayout: string = adn.galeriaLayout ?? 'mosaico';
+const datosItems = [
+  { etiqueta: 'Horarios', valor: cliente.horarios },
+  { etiqueta: 'Dirección', valor: cliente.direccion },
+  ...cliente.extras.map((e: { etiqueta: string; valor: string }) => ({ etiqueta: e.etiqueta, valor: e.valor })),
+];
+const galeriaGrid = galeriaLayout === 'tira' ? 'grid gap-4 md:grid-cols-3' : galeriaLayout === 'doble' ? 'grid gap-4 md:grid-cols-2' : 'grid gap-4 md:grid-cols-12';
+const portadaIlustrativa = portada?.ilustrativa === true;
+const decor = adn.decor !== 'ninguno' ? `decor decor-${adn.decor}` : '';
+// Orden de los bloques según el diseño del sitio (cada sitio distinto). Precios, equipo y preguntas van después.
+const bloques: string[] = adn.orden ?? (adn.datosAntes ? ['datos', 'servicios', 'galeria'] : ['servicios', 'datos', 'galeria']);
+const orden: Record<string, number> = { hero: 0, marquee: 10, precios: 50, equipo: 60, videos: 80, faq: 90, contacto: 100 };
+bloques.forEach((k, i) => { orden[k] = 20 + i * 10; });
+const spans = ['md:col-span-7', 'md:col-span-5', 'md:col-span-5', 'md:col-span-7', 'md:col-span-12'];
+const bento = ['md:col-span-4', 'md:col-span-2', 'md:col-span-2', 'md:col-span-2', 'md:col-span-2', 'md:col-span-3', 'md:col-span-3'];
+---
+<Base adn={adn} titulo={cliente.seo.titulo} descripcion={cliente.seo.descripcion}>
+  {demo && <p class="bg-accent px-4 py-2 text-center text-sm font-semibold text-accent-ink">Demostración con textos de ejemplo. Los reemplazamos con los datos reales de tu negocio.</p>}
+
+  <header class="flex flex-col gap-3 px-4 py-4 md:flex-row md:items-center md:justify-between md:px-10">
+    <span class="titulo text-xl">{cliente.nombre}</span>
+    <div class="flex flex-wrap items-center gap-4">
+      <Nav cliente={cliente} actual="/" />
+      <a class="btn btn-ghost !min-h-11 !py-2 text-sm" href={wa}>WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="contenido" class="flex flex-col">
+    <!-- PORTADA -->
+    <section class={`${decor} overflow-hidden px-4 pb-20 pt-12 md:px-10 md:pb-32 md:pt-24`} style={`order:${orden.hero}`}>
+      {adn.hero === 'gigante' && (
+        <div>
+          <p class="rv mb-6 text-sm uppercase tracking-[.25em] text-muted">{cliente.rubro}</p>
+          <h1 class="rv text-[clamp(3rem,13vw,11rem)]" style="--i:1">{cliente.titulo}</h1>
+          <div class="mt-12 grid gap-8 md:grid-cols-12">
+            <p class="rv max-w-xl md:col-span-6 md:col-start-7" style="--i:2">{cliente.bajada}</p>
+            <a class="btn rv w-fit md:col-span-3" style="--i:3" href={wa}>{cliente.cta}</a>
+          </div>
+          {portada && <figure class="rv mt-12" style="--i:3"><img class="foto h-64 w-full md:h-[30rem]" src={portada.src} alt={portada.alt} width={portada.w} height={portada.h} fetchpriority="high" decoding="async" />{portada.ilustrativa && <figcaption class="mt-2 text-xs text-muted">Imagen ilustrativa</figcaption>}</figure>}
+        </div>
+      )}
+      {adn.hero === 'split' && (
+        <div class="grid items-end gap-12 md:grid-cols-12">
+          <div class="md:col-span-7">
+            <p class="rv mb-6 text-sm uppercase tracking-[.25em] text-muted">{cliente.rubro}</p>
+            <h1 class="rv text-[clamp(2.75rem,8vw,7rem)]" style="--i:1">{cliente.titulo}</h1>
+            <p class="rv mt-8 max-w-lg" style="--i:2">{cliente.bajada}</p>
+            <a class="btn rv mt-10" style="--i:3" href={wa}>{cliente.cta}</a>
+          </div>
+          {portada
+            ? <img class="foto rv h-80 w-full md:col-span-5 md:h-[34rem]" style="--i:2" src={portada.src} alt={portada.alt} width={portada.w} height={portada.h} fetchpriority="high" decoding="async" />
+            : <div class="rv hidden select-none md:col-span-5 md:block" style="--i:2" aria-hidden="true"><span class="titulo block text-right text-[22rem] leading-[.8] text-accent opacity-90">{inicial}</span></div>}
+        </div>
+      )}
+      {adn.hero === 'asimetrico' && (
+        <div class="relative grid gap-10 md:grid-cols-12">
+          <h1 class="rv text-[clamp(2.75rem,9vw,8rem)] md:col-span-9" style="--i:1">{cliente.titulo}</h1>
+          <div class="md:col-span-5 md:col-start-6">
+            <p class="rv" style="--i:2">{cliente.bajada}</p>
+            <a class="btn rv mt-8" style="--i:3" href={wa}>{cliente.cta}</a>
+          </div>
+          {portada
+            ? <img class="foto rv h-72 w-full md:col-span-4 md:col-start-9 md:row-start-2 md:h-96" style="--i:3" src={portada.src} alt={portada.alt} width={portada.w} height={portada.h} fetchpriority="high" decoding="async" />
+            : <div class="pointer-events-none absolute -right-40 -top-24 hidden h-96 w-96 rounded-full bg-accent opacity-15 md:block" aria-hidden="true"></div>}
+        </div>
+      )}
+      {adn.hero === 'lateral' && (
+        <div class="grid gap-10 md:grid-cols-12">
+          <p class="titulo hidden text-6xl text-accent md:col-span-2 md:block" style="writing-mode:vertical-rl" aria-hidden="true">{cliente.nombre}</p>
+          <div class="md:col-span-6">
+            <p class="rv mb-6 text-sm uppercase tracking-[.25em] text-muted">{cliente.rubro}</p>
+            <h1 class="rv text-[clamp(2.5rem,6.5vw,6rem)]" style="--i:1">{cliente.titulo}</h1>
+            <p class="rv mt-8 max-w-lg" style="--i:2">{cliente.bajada}</p>
+            <a class="btn rv mt-10" style="--i:3" href={wa}>{cliente.cta}</a>
+          </div>
+          {portada
+            ? <img class="foto rv h-80 w-full md:col-span-4 md:h-[30rem]" style="--i:2" src={portada.src} alt={portada.alt} width={portada.w} height={portada.h} fetchpriority="high" decoding="async" />
+            : <div class="rv hidden md:col-span-4 md:block" aria-hidden="true"><div class="h-full min-h-72 border-2 border-accent" style="border-radius:var(--radius)"></div></div>}
+        </div>
+      )}
+      {adn.hero === 'tarjeta' && (
+        <div class="relative -mx-4 -mb-20 -mt-12 flex min-h-[32rem] items-end px-4 py-12 md:-mx-10 md:-mt-24 md:min-h-[38rem] md:px-10 md:py-20">
+          {portada
+            ? <img class="foto absolute inset-0 -z-10 h-full w-full !rounded-none" src={portada.src} alt={portada.alt} width={portada.w} height={portada.h} fetchpriority="high" decoding="async" />
+            : <div class="absolute inset-0 -z-10 bg-surface" aria-hidden="true"></div>}
+          <div class="tarjeta rv max-w-2xl p-6 md:p-12">
+            <p class="mb-4 text-sm uppercase tracking-[.25em] text-muted">{cliente.rubro}</p>
+            <h1 class="text-[clamp(2.25rem,6vw,5rem)]">{cliente.titulo}</h1>
+            <p class="mt-6">{cliente.bajada}</p>
+            <a class="btn mt-8" href={wa}>{cliente.cta}</a>
+          </div>
+        </div>
+      )}
+      {adn.hero === 'pantalla' && (
+        <div class="flex min-h-[78vh] flex-col items-center justify-center text-center">
+          <p class="rv mb-6 text-sm uppercase tracking-[.3em] text-muted">{cliente.rubro}</p>
+          <h1 class="rv max-w-5xl text-[clamp(2.75rem,10vw,9rem)]" style="--i:1">{cliente.titulo}</h1>
+          <p class="rv mx-auto mt-8 max-w-xl" style="--i:2">{cliente.bajada}</p>
+          <a class="btn rv mt-10" style="--i:3" href={wa}>{cliente.cta}</a>
+          {portada && <img class="foto rv mt-16 h-56 w-full max-w-4xl object-cover md:h-72" style="--i:4" src={portada.src} alt={portada.alt} width={portada.w} height={portada.h} fetchpriority="high" decoding="async" />}
+        </div>
+      )}
+      {adn.hero === 'columna' && (
+        <div class="mx-auto max-w-3xl">
+          <p class="rv titulo text-[clamp(6rem,22vw,16rem)] leading-none text-accent" aria-hidden="true">{inicial}</p>
+          <h1 class="rv -mt-6 text-[clamp(2.5rem,7vw,6rem)]" style="--i:1">{cliente.titulo}</h1>
+          <p class="rv mt-8 text-lg text-muted" style="--i:2">{cliente.bajada}</p>
+          <a class="btn rv mt-10" style="--i:3" href={wa}>{cliente.cta}</a>
+          {portada && <img class="foto rv mt-14 h-72 w-full md:h-[28rem]" style="--i:4" src={portada.src} alt={portada.alt} width={portada.w} height={portada.h} fetchpriority="high" decoding="async" />}
+        </div>
+      )}
+      {adn.hero === 'mosaico' && (
+        <div class="grid gap-6 md:grid-cols-12">
+          <div class="flex flex-col justify-center md:col-span-6">
+            <p class="rv mb-6 text-sm uppercase tracking-[.25em] text-muted">{cliente.rubro}</p>
+            <h1 class="rv text-[clamp(2.5rem,6vw,5.5rem)]" style="--i:1">{cliente.titulo}</h1>
+            <p class="rv mt-8 max-w-md" style="--i:2">{cliente.bajada}</p>
+            <a class="btn rv mt-10 w-fit" style="--i:3" href={wa}>{cliente.cta}</a>
+          </div>
+          <div class="grid grid-cols-2 gap-4 md:col-span-6">
+            {fotos.length > 0 ? fotos.slice(0, 3).map((f, i) => (
+              <figure class={i === 0 ? 'col-span-2' : ''}>
+                <img class={`foto rv w-full ${i === 0 ? 'h-64 md:h-96' : 'h-44 md:h-56'}`} style={`--i:${i}`} src={f.src} alt={f.alt} width={f.w} height={f.h} loading={i === 0 ? 'eager' : 'lazy'} fetchpriority={i === 0 ? 'high' : undefined} decoding="async" />
+                {f.ilustrativa && <figcaption class="mt-2 text-xs text-muted">Imagen ilustrativa</figcaption>}
+              </figure>
+            )) : <div class="rv col-span-2 h-64 bg-surface md:h-96" aria-hidden="true"></div>}
+          </div>
+        </div>
+      )}
+    </section>
+
+    <!-- MARQUESINA -->
+    {adn.marquee && (
+      <div class="overflow-hidden border-y border-line bg-surface py-4" style={`order:${orden.marquee}`} aria-hidden="true">
+        <div class="marquee titulo text-2xl">
+          {marquee.map((t) => <span class="mx-6 whitespace-nowrap">{t} <span class="text-accent">/</span></span>)}
+        </div>
+      </div>
+    )}
+
+    <!-- SERVICIOS -->
+    <section class="px-4 py-20 md:px-10 md:py-32" style={`order:${orden.servicios}`} aria-labelledby="servicios">
+      {adn.servicios === 'lista' ? (
+        <div class="grid gap-12 md:grid-cols-12">
+          <h2 id="servicios" class="rv text-[clamp(2rem,3.4vw,3.5rem)] md:sticky md:top-8 md:col-span-5 md:self-start">{cliente.etiquetaServicios}</h2>
+          <ol class="md:col-span-7">
+            {servicios.map((s, i) => (
+              <li class="fila rv border-t border-line py-8" style={`--i:${i}`}>
+                <div class="flex gap-6">
+                  <span class="titulo w-10 shrink-0 text-accent">{String(i + 1).padStart(2, '0')}</span>
+                  <div><h3 class="text-2xl md:text-3xl">{s.titulo}</h3><p class="mt-3 max-w-xl text-muted">{s.texto}</p></div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      ) : (
+        <div>
+          <h2 id="servicios" class="rv mb-12 text-[clamp(2rem,5vw,4.5rem)]">{cliente.etiquetaServicios}</h2>
+          {adn.servicios === 'grid' && (
+            <div class="grid gap-4 md:grid-cols-6">
+              {servicios.map((s, i) => (
+                <article class={`tarjeta rv p-6 md:p-8 ${i === 0 ? 'md:col-span-6' : 'md:col-span-3'} ${i % 2 === 1 ? 'md:mt-8' : ''}`} style={`--i:${i}`}>
+                  <span class="titulo text-accent">{String(i + 1).padStart(2, '0')}</span>
+                  <h3 class={`mt-3 ${i === 0 ? 'text-4xl md:text-5xl' : 'text-2xl'}`}>{s.titulo}</h3>
+                  <p class="mt-3 max-w-xl text-muted">{s.texto}</p>
+                </article>
+              ))}
+            </div>
+          )}
+          {adn.servicios === 'bento' && (
+            <div class="grid gap-4 md:grid-cols-6">
+              {servicios.map((s, i) => (
+                <article class={`rv p-6 md:p-8 ${bento[i % bento.length]} ${i === 0 ? 'bg-accent text-accent-ink' : 'tarjeta'}`} style={`--i:${i};border-radius:var(--radius)`}>
+                  <h3 class={i === 0 ? 'text-4xl md:text-5xl' : 'text-2xl'}>{s.titulo}</h3>
+                  <p class={`mt-3 ${i === 0 ? '' : 'text-muted'}`}>{s.texto}</p>
+                </article>
+              ))}
+            </div>
+          )}
+          {adn.servicios === 'escalera' && (
+            <ol class="space-y-6">
+              {servicios.map((s, i) => (
+                <li class="rv border-l-4 border-accent pl-6 md:[margin-left:calc(var(--n)*6%)]" style={`--i:${i};--n:${Math.min(i, 5)}`}>
+                  <h3 class="text-2xl md:text-4xl">{s.titulo}</h3>
+                  <p class="mt-2 max-w-xl text-muted">{s.texto}</p>
+                </li>
+              ))}
+            </ol>
+          )}
+          {adn.servicios === 'linea' && (
+            <ol class="relative ml-3 border-l-2 border-accent pl-10">
+              {servicios.map((s, i) => (
+                <li class="rv relative pb-12 last:pb-0" style={`--i:${i}`}>
+                  <span class="absolute -left-[3.1rem] top-1 flex h-7 w-7 items-center justify-center rounded-full bg-accent text-xs font-semibold text-accent-ink" aria-hidden="true">{i + 1}</span>
+                  <h3 class="text-2xl md:text-3xl">{s.titulo}</h3>
+                  <p class="mt-2 max-w-xl text-muted">{s.texto}</p>
+                </li>
+              ))}
+            </ol>
+          )}
+          {adn.servicios === 'acordeon' && (
+            <div class="max-w-4xl">
+              {servicios.map((s, i) => (
+                <details class="rv border-t border-line py-5" style={`--i:${i}`} open={i === 0}>
+                  <summary class="cursor-pointer text-2xl md:text-3xl"><span class="titulo mr-4 text-base text-accent">{String(i + 1).padStart(2, '0')}</span>{s.titulo}</summary>
+                  <p class="mt-4 max-w-xl text-muted">{s.texto}</p>
+                </details>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </section>
+
+    <!-- PRECIOS (solo si el cliente los dio) -->
+    {precios.length > 0 && (
+      <section class="px-4 py-20 md:px-10 md:py-28" style={`order:${orden.precios}`} aria-labelledby="precios">
+        <div class="grid gap-10 md:grid-cols-12">
+          <h2 id="precios" class="rv text-[clamp(2rem,4vw,3.5rem)] md:col-span-5">Precios</h2>
+          <dl class="md:col-span-7">
+            {precios.map((p, i) => (
+              <div class="rv flex items-baseline justify-between gap-6 border-t border-line py-5" style={`--i:${i}`}>
+                <dt class="text-lg">{p.item}</dt>
+                {p.monto && <dd class="titulo text-xl text-accent">{p.monto}</dd>}
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+    )}
+
+    <!-- EQUIPO / NOSOTROS (solo si el cliente lo dio) -->
+    {equipo && (
+      <section class="bg-surface px-4 py-20 md:px-10 md:py-28" style={`order:${orden.equipo}`} aria-labelledby="equipo">
+        <div class="grid gap-10 md:grid-cols-12">
+          <h2 id="equipo" class="rv text-[clamp(2rem,4vw,3.5rem)] md:col-span-5">Quiénes somos</h2>
+          <p class="rv max-w-2xl whitespace-pre-line text-lg md:col-span-7" style="--i:1">{equipo}</p>
+        </div>
+      </section>
+    )}
+
+    <!-- GALERÍA -->
+    {galeria.length > 0 && (
+      <section class="px-4 py-20 md:px-10 md:py-28" style={`order:${orden.galeria}`} aria-label="Galería de fotos">
+        <div class={galeriaGrid}>
+          {galeria.map((f, i) => (
+            <figure class={galeriaLayout === 'mosaico' ? spans[i % spans.length] : ''}>
+              <img class={`foto rv h-72 w-full md:h-[26rem]`} style={`--i:${i % 3}`} src={f.src} alt={f.alt} width={f.w} height={f.h} loading="lazy" decoding="async" />
+              {f.ilustrativa && <figcaption class="mt-2 text-xs text-muted">Imagen ilustrativa</figcaption>}
+            </figure>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- VIDEOS -->
+    {videos.length > 0 && (
+      <section class="px-4 pb-20 md:px-10 md:pb-32" style={`order:${orden.videos}`} aria-label="Videos">
+        <div class="grid gap-4 md:grid-cols-2">
+          {videos.map((v) => (
+            <video class="foto rv aspect-video w-full" controls playsinline preload="metadata" aria-label={`Video de ${cliente.nombre}`}>
+              <source src={v.src} type={v.type} />
+            </video>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- DATOS -->
+    <section class="bg-surface px-4 py-20 md:px-10 md:py-28" style={`order:${orden.datos}`} aria-labelledby="datos">
+      <h2 id="datos" class="rv mb-12 text-[clamp(2rem,5vw,4.5rem)]">{adn.textos.datos}</h2>
+      {datosLayout === 'tarjetas' && (
+        <dl class="grid gap-4 md:grid-cols-3">
+          {datosItems.map((d, i) => (
+            <div class="tarjeta rv p-6" style={`--i:${i}`}><dt class="mb-2 text-sm uppercase tracking-[.2em] text-muted">{d.etiqueta}</dt><dd class="text-lg">{d.valor}</dd></div>
+          ))}
+        </dl>
+      )}
+      {datosLayout === 'centrado' && (
+        <dl class="mx-auto grid max-w-3xl gap-10">
+          {datosItems.map((d, i) => (
+            <div class="rv border-t border-line pt-6" style={`--i:${i}`}><dt class="text-sm uppercase tracking-[.2em] text-muted">{d.etiqueta}</dt><dd class="mt-2 text-xl">{d.valor}</dd></div>
+          ))}
+        </dl>
+      )}
+      {datosLayout === 'columnas' && (
+        <dl class="grid gap-10 md:grid-cols-3">
+          <div class="rv" style="--i:0"><dt class="mb-2 text-sm uppercase tracking-[.2em] text-muted">Horarios</dt><dd class="text-lg">{cliente.horarios}</dd></div>
+          <div class="rv" style="--i:1">
+            <dt class="mb-2 text-sm uppercase tracking-[.2em] text-muted">Dirección</dt>
+            <dd class="text-lg">{maps ? <a class="underline decoration-accent decoration-2 underline-offset-4" href={maps} rel="noopener">{cliente.direccion}</a> : cliente.direccion}</dd>
+          </div>
+          {cliente.extras.map((e: { etiqueta: string; valor: string }, i: number) => (
+            <div class="rv" style={`--i:${i + 2}`}><dt class="mb-2 text-sm uppercase tracking-[.2em] text-muted">{e.etiqueta}</dt><dd class="text-lg">{e.valor}</dd></div>
+          ))}
+        </dl>
+      )}
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (solo si el cliente las dio) -->
+    {faq.length > 0 && (
+      <section class="px-4 py-20 md:px-10 md:py-28" style={`order:${orden.faq}`} aria-labelledby="faq">
+        <div class="grid gap-10 md:grid-cols-12">
+          <h2 id="faq" class="rv text-[clamp(2rem,4vw,3.5rem)] md:col-span-5">Preguntas frecuentes</h2>
+          <div class="md:col-span-7">
+            {faq.map((f, i) => (
+              <details class="rv border-t border-line py-5" style={`--i:${i}`}>
+                <summary class="cursor-pointer text-lg font-semibold">{f.q}</summary>
+                <p class="mt-3 max-w-xl text-muted">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- CONTACTO -->
+    <section id="contacto" class={`${decor} px-4 py-24 md:px-10 md:py-40`} style={`order:${orden.contacto}`} aria-labelledby="contacto-t">
+      <h2 id="contacto-t" class="rv text-[clamp(2.5rem,9vw,8rem)]">{adn.textos.contacto}</h2>
+      <div class="mt-10 flex flex-wrap items-center gap-4">
+        <a class="btn rv" href={wa}>{cliente.cta}</a>
+        {cliente.telefono && <a class="btn btn-ghost rv" href={`tel:${cliente.telefono.replace(/[^\d+]/g, '')}`}>{cliente.telefono}</a>}
+        {ig && <a class="btn btn-ghost rv" href={ig} rel="noopener">Instagram</a>}
+        {fb && <a class="btn btn-ghost rv" href={fb} rel="noopener">Facebook</a>}
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line px-4 py-6 text-sm text-muted md:px-10">
+    <p>© {new Date().getFullYear()} {cliente.nombre}</p>
+    {creditos(cliente).length > 0 && (
+      <p class="mt-2 max-w-3xl text-xs">
+        Fotos ilustrativas:{' '}
+        {creditos(cliente).map((c: any, i: number) => (
+          <>
+            {i > 0 && ' · '}
+            <a class="inline-flex min-h-11 items-center underline" href={c.origen} rel="noopener">{c.creador}</a> ({c.licencia})
+          </>
+        ))}
+      </p>
+    )}
+  </footer>
+
+  <a href={wa} aria-label="Escribir por WhatsApp" class="btn fixed bottom-4 right-4 z-40 !min-h-14 !min-w-14 justify-center !rounded-full !p-0 md:hidden">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/></svg>
+  </a>
+</Base>

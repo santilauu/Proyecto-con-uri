@@ -1,0 +1,1396 @@
+{
+  "gimnasio": {
+    "nombre": "Gimnasios",
+    "singular": "gimnasio",
+    "busqueda": "gimnasio",
+    "tono": "motivador, directo, energético",
+    "estilosSugeridos": [
+      "brutal",
+      "noir",
+      "industrial",
+      "fresco"
+    ],
+    "etiquetaServicios": "Disciplinas y planes",
+    "ejemploServicios": [
+      "Musculación",
+      "Clases grupales",
+      "Entrenamiento personalizado"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Entrená en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: consultá horarios y cómo empezar.",
+      "Sumate a {s}. Escribinos y coordinamos.",
+      "Preguntanos por WhatsApp sobre {s}."
+    ],
+    "ctas": [
+      "Quiero empezar",
+      "Consultá por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué disciplinas, clases o planes ofrecen? Mandalos separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "instagram",
+        "texto": "¿Tienen Instagram? Pasame el usuario (o escribí \"no\")."
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "gimnasio",
+      "gym",
+      "crossfit",
+      "fitness",
+      "musculacion",
+      "pilates",
+      "funcional",
+      "boxeo",
+      "entrenamiento",
+      "yoga"
+    ],
+    "fotos": [
+      "gym workout",
+      "fitness training"
+    ],
+    "detalleServicios": true
+  },
+  "estetica": {
+    "nombre": "Peluquerías, barberías y salones de estética",
+    "singular": "salón",
+    "busqueda": "peluquería barbería salón de belleza",
+    "tono": "cercano, sensorial, elegante",
+    "estilosSugeridos": [
+      "editorial",
+      "pastel",
+      "calido",
+      "elegante"
+    ],
+    "etiquetaServicios": "Tratamientos",
+    "ejemploServicios": [
+      "Corte y peinado",
+      "Color",
+      "Tratamientos"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Tu turno en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: pedí tu turno por WhatsApp.",
+      "Reservá {s} cuando quieras.",
+      "Escribinos y coordinamos el turno sobre {s}."
+    ],
+    "ctas": [
+      "Pedí tu turno",
+      "Reservá por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué servicios ofrecen? (corte, color, manicuría, barba…). Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "instagram",
+        "texto": "¿Tienen Instagram? Pasame el usuario (o escribí \"no\")."
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "peluquer",
+      "barber",
+      "salon de belleza",
+      "estetica",
+      "spa",
+      "manicur",
+      "unas",
+      "depilacion",
+      "centro de belleza",
+      "coiffeur"
+    ],
+    "fotos": [
+      "hair salon",
+      "beauty salon"
+    ],
+    "detalleServicios": true
+  },
+  "medico": {
+    "nombre": "Consultorios médicos y odontológicos",
+    "singular": "consultorio",
+    "busqueda": "consultorio médico odontólogo",
+    "tono": "claro, profesional, tranquilizador, sin jerga",
+    "estilosSugeridos": [
+      "fresco",
+      "sereno",
+      "tinta",
+      "editorial"
+    ],
+    "etiquetaServicios": "Especialidades y prestaciones",
+    "ejemploServicios": [
+      "Consultas",
+      "Estudios",
+      "Turnos"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Atención en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: pedí tu turno por WhatsApp.",
+      "Consultá por {s}.",
+      "Escribinos para coordinar sobre {s}."
+    ],
+    "ctas": [
+      "Pedí tu turno",
+      "Escribinos por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué especialidades o prestaciones ofrecen? Separadas por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "obrassociales",
+        "texto": "¿Con qué obras sociales o prepagas trabajan? (o escribí \"particular\")."
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "medic",
+      "odontolog",
+      "dentista",
+      "clinica",
+      "consultorio",
+      "pediatr",
+      "dermatolog",
+      "ginecolog",
+      "cardiolog",
+      "sanatorio"
+    ],
+    "fotos": [
+      "medical clinic",
+      "dental clinic"
+    ],
+    "detalleServicios": true
+  },
+  "gastronomia": {
+    "nombre": "Restaurantes, pizzerías y cafés",
+    "singular": "lugar para comer",
+    "busqueda": "restaurante pizzería café",
+    "tono": "simple, amable, directo",
+    "estilosSugeridos": [
+      "calido",
+      "noir",
+      "brutal",
+      "pastel"
+    ],
+    "etiquetaServicios": "Qué se come",
+    "ejemploServicios": [
+      "Platos principales",
+      "Para compartir",
+      "Bebidas"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Comé bien en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Mirá el horario y vení.",
+      "{lista}. Pedí por WhatsApp o pasá por {nombre}."
+    ],
+    "descGenericas": [
+      "{S}: preguntanos qué hay hoy.",
+      "Pedí {s} por WhatsApp.",
+      "Escribinos y te contamos sobre {s}."
+    ],
+    "ctas": [
+      "Hacé tu pedido",
+      "Reservá por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Cuáles son sus platos o productos estrella? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "delivery",
+        "texto": "¿Hacen delivery o take away? ¿Por qué medios?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "restaurante",
+      "pizzer",
+      "cafe",
+      "cafeteria",
+      "parrilla",
+      "cerveceria",
+      "rotiseria",
+      "hamburgues",
+      "sushi",
+      "empanada",
+      "bodegon",
+      "resto"
+    ],
+    "fotos": [
+      "restaurant interior",
+      "coffee shop"
+    ],
+    "detalleServicios": false
+  },
+  "panaderia": {
+    "nombre": "Panaderías, pastelerías y heladerías",
+    "singular": "local",
+    "busqueda": "panadería pastelería heladería",
+    "tono": "cálido, goloso, directo",
+    "estilosSugeridos": [
+      "calido",
+      "pastel",
+      "editorial",
+      "fresco"
+    ],
+    "etiquetaServicios": "Qué hacemos",
+    "ejemploServicios": [
+      "Pan",
+      "Facturas",
+      "Tortas"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Lo de siempre, en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Pasá o encargá por WhatsApp.",
+      "{lista}. Encargos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: preguntanos qué hay hoy.",
+      "Encargá {s} por WhatsApp.",
+      "Consultanos sobre {s}."
+    ],
+    "ctas": [
+      "Hacé tu encargo",
+      "Encargá por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué productos hacen o venden? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "delivery",
+        "texto": "¿Hacen encargos, delivery o envíos? ¿Cómo?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "panader",
+      "pasteler",
+      "helader",
+      "confiter",
+      "facturas",
+      "casa de te",
+      "chocolater"
+    ],
+    "fotos": [
+      "bakery bread",
+      "pastry shop"
+    ],
+    "detalleServicios": false
+  },
+  "inmobiliaria": {
+    "nombre": "Inmobiliarias",
+    "singular": "inmobiliaria",
+    "busqueda": "inmobiliaria",
+    "tono": "confiable, aspiracional, concreto",
+    "estilosSugeridos": [
+      "tinta",
+      "elegante",
+      "editorial",
+      "sereno"
+    ],
+    "etiquetaServicios": "Qué hacemos",
+    "ejemploServicios": [
+      "Venta",
+      "Alquiler",
+      "Tasaciones"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Inmuebles en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: consultanos por WhatsApp.",
+      "Consultá por {s}.",
+      "Escribinos y coordinamos sobre {s}."
+    ],
+    "ctas": [
+      "Consultá por una propiedad",
+      "Hablá con un asesor"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué servicios ofrecen? (venta, alquiler, tasaciones, administración). Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "zonas",
+        "texto": "¿En qué barrios o zonas trabajan?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "inmobiliaria",
+      "propiedades",
+      "alquileres",
+      "bienes raices",
+      "corredor inmobiliario"
+    ],
+    "fotos": [
+      "real estate office",
+      "house interior"
+    ],
+    "detalleServicios": true
+  },
+  "estudio": {
+    "nombre": "Estudios jurídicos y contables",
+    "singular": "estudio",
+    "busqueda": "estudio jurídico abogados contadores",
+    "tono": "sobrio, claro, confiable, sin jerga",
+    "estilosSugeridos": [
+      "tinta",
+      "sereno",
+      "elegante",
+      "editorial"
+    ],
+    "etiquetaServicios": "Áreas de trabajo",
+    "ejemploServicios": [
+      "Consultas",
+      "Trámites",
+      "Asesoramiento"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Asesoramiento en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: coordiná una consulta.",
+      "Consultá por {s}.",
+      "Escribinos y te orientamos sobre {s}."
+    ],
+    "ctas": [
+      "Coordiná una consulta",
+      "Escribinos por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿En qué áreas o temas trabajan? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "modalidad",
+        "texto": "¿Atienden presencial, online o ambas?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "abogad",
+      "estudio juridico",
+      "contador",
+      "contable",
+      "escriban",
+      "notari",
+      "estudio de abogados",
+      "asesoria"
+    ],
+    "fotos": [
+      "law office",
+      "accountant desk"
+    ],
+    "detalleServicios": true
+  },
+  "veterinaria": {
+    "nombre": "Veterinarias y pet shops",
+    "singular": "veterinaria",
+    "busqueda": "veterinaria pet shop",
+    "tono": "cercano, cuidadoso, tranquilizador",
+    "estilosSugeridos": [
+      "fresco",
+      "calido",
+      "pastel",
+      "sereno"
+    ],
+    "etiquetaServicios": "Para tu mascota",
+    "ejemploServicios": [
+      "Consultas",
+      "Vacunación",
+      "Peluquería"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Cuidamos a tu mascota en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: pedí tu turno por WhatsApp.",
+      "Consultá por {s}.",
+      "Escribinos y coordinamos sobre {s}."
+    ],
+    "ctas": [
+      "Pedí tu turno",
+      "Escribinos por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué servicios o productos ofrecen? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "urgencias",
+        "texto": "¿Atienden urgencias o tienen guardia? ¿Cómo se contactan?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "veterinar",
+      "pet shop",
+      "mascotas",
+      "petshop",
+      "peluqueria canina"
+    ],
+    "fotos": [
+      "veterinary clinic",
+      "pet dog"
+    ],
+    "detalleServicios": true
+  },
+  "taller": {
+    "nombre": "Talleres mecánicos, gomerías y lavaderos",
+    "singular": "taller",
+    "busqueda": "taller mecánico gomería lavadero",
+    "tono": "directo, confiable, sin vueltas",
+    "estilosSugeridos": [
+      "industrial",
+      "brutal",
+      "noir",
+      "fresco"
+    ],
+    "etiquetaServicios": "Qué hacemos",
+    "ejemploServicios": [
+      "Mecánica ligera",
+      "Frenos y suspensión",
+      "Cambio de aceite"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Tu auto en buenas manos, en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: consultá por WhatsApp.",
+      "Pedí turno para {s}.",
+      "Escribinos con tu consulta sobre {s}."
+    ],
+    "ctas": [
+      "Pedí turno",
+      "Consultá por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué trabajos o servicios hacen? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "marcas",
+        "texto": "¿Trabajan con alguna marca o tipo de vehículo en particular?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "taller",
+      "mecanic",
+      "gomeria",
+      "lavadero",
+      "lubricentro",
+      "chapa y pintura",
+      "alineacion",
+      "automotor"
+    ],
+    "fotos": [
+      "auto mechanic workshop",
+      "car repair"
+    ],
+    "detalleServicios": true
+  },
+  "psicologia": {
+    "nombre": "Psicólogos, kinesiólogos y terapias",
+    "singular": "consultorio",
+    "busqueda": "psicólogo kinesiólogo terapia",
+    "tono": "sereno, claro, respetuoso, sin jerga",
+    "estilosSugeridos": [
+      "sereno",
+      "pastel",
+      "fresco",
+      "editorial"
+    ],
+    "etiquetaServicios": "Cómo te acompañamos",
+    "ejemploServicios": [
+      "Primera consulta",
+      "Sesiones",
+      "Seguimiento"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Un espacio para vos en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: consultá disponibilidad.",
+      "Pedí tu turno para {s}.",
+      "Escribinos y coordinamos sobre {s}."
+    ],
+    "ctas": [
+      "Pedí tu turno",
+      "Escribinos por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué tipo de atención o tratamientos ofrecen? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "modalidad",
+        "texto": "¿Atienden presencial, online o ambas? ¿Trabajan con obras sociales?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "psicolog",
+      "kinesi",
+      "terapia",
+      "fonoaudi",
+      "nutricion",
+      "terapeuta",
+      "psicoanali",
+      "osteopat"
+    ],
+    "fotos": [
+      "calm therapy room",
+      "physiotherapy"
+    ],
+    "detalleServicios": true
+  },
+  "floreria": {
+    "nombre": "Florerías, regalerías y viveros",
+    "singular": "local",
+    "busqueda": "florería regalería vivero",
+    "tono": "cálido, sensorial, cercano",
+    "estilosSugeridos": [
+      "pastel",
+      "calido",
+      "editorial",
+      "fresco"
+    ],
+    "etiquetaServicios": "Qué tenemos",
+    "ejemploServicios": [
+      "Ramos",
+      "Plantas",
+      "Regalos"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Flores y detalles en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Encargá por WhatsApp.",
+      "{lista}. Consultanos por envíos."
+    ],
+    "descGenericas": [
+      "{S}: consultá disponibilidad.",
+      "Encargá {s} por WhatsApp.",
+      "Escribinos y lo armamos sobre {s}."
+    ],
+    "ctas": [
+      "Hacé tu encargo",
+      "Encargá por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué productos ofrecen? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "delivery",
+        "texto": "¿Hacen envíos? ¿A qué zonas?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "florer",
+      "vivero",
+      "regaleria",
+      "flores",
+      "jardineria"
+    ],
+    "fotos": [
+      "flower shop",
+      "bouquet flowers"
+    ],
+    "detalleServicios": false
+  },
+  "optica": {
+    "nombre": "Ópticas",
+    "singular": "óptica",
+    "busqueda": "óptica",
+    "tono": "claro, cuidado, profesional",
+    "estilosSugeridos": [
+      "fresco",
+      "sereno",
+      "editorial",
+      "tinta"
+    ],
+    "etiquetaServicios": "Qué ofrecemos",
+    "ejemploServicios": [
+      "Anteojos recetados",
+      "Lentes de sol",
+      "Lentes de contacto"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Tu óptica en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: consultá por WhatsApp.",
+      "Preguntá por {s}.",
+      "Escribinos y te asesoramos sobre {s}."
+    ],
+    "ctas": [
+      "Consultá por WhatsApp",
+      "Escribinos"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué productos y servicios ofrecen? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "obrassociales",
+        "texto": "¿Trabajan con obras sociales o prepagas?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "optica",
+      "anteojos",
+      "lentes",
+      "oculista"
+    ],
+    "fotos": [
+      "eyeglasses store",
+      "optician"
+    ],
+    "detalleServicios": false
+  },
+  "iglesia": {
+    "nombre": "Iglesias y comunidades",
+    "singular": "comunidad",
+    "busqueda": "iglesia parroquia",
+    "tono": "cálido, sereno, respetuoso",
+    "estilosSugeridos": [
+      "sereno",
+      "calido",
+      "editorial",
+      "elegante"
+    ],
+    "etiquetaServicios": "Nuestras reuniones",
+    "ejemploServicios": [
+      "Celebración principal",
+      "Actividades para jóvenes",
+      "Grupos de oración"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Te esperamos en {barrio}",
+      "Una comunidad en {barrio}"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Estás invitado.",
+      "{lista}. Escribinos si querés sumarte."
+    ],
+    "descGenericas": [
+      "{S}: consultá días y horarios.",
+      "Sumate a {s}.",
+      "Escribinos y te contamos sobre {s}."
+    ],
+    "ctas": [
+      "Escribinos",
+      "Visitanos"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué reuniones y actividades tienen? (celebraciones, grupos, catequesis…). Separadas por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "contacto",
+        "texto": "¿Quién atiende las consultas? (nombre y rol, si querés mostrarlo)"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "iglesia",
+      "parroquia",
+      "capilla",
+      "templo",
+      "ministerio",
+      "cristian",
+      "evangelic",
+      "catolic"
+    ],
+    "fotos": [
+      "church interior",
+      "community gathering"
+    ],
+    "detalleServicios": false
+  },
+  "sindicato": {
+    "nombre": "Sindicatos y asociaciones",
+    "singular": "sindicato",
+    "busqueda": "sindicato gremio asociación",
+    "tono": "institucional, solidario, claro",
+    "estilosSugeridos": [
+      "tinta",
+      "sereno",
+      "industrial",
+      "editorial"
+    ],
+    "etiquetaServicios": "Qué ofrecemos a los afiliados",
+    "ejemploServicios": [
+      "Asesoramiento",
+      "Beneficios",
+      "Gestiones"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Juntos, en {barrio}",
+      "{s1}, {s2} y más para los afiliados"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "Para afiliados y trabajadores: {lista}.",
+      "{lista}. Escribinos o acercate a la sede."
+    ],
+    "descGenericas": [
+      "{S}: consultá requisitos.",
+      "Averiguá por {s}.",
+      "Escribinos y te orientamos sobre {s}."
+    ],
+    "ctas": [
+      "Consultá por WhatsApp",
+      "Contactanos"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué servicios o beneficios ofrecen a sus afiliados? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "afiliacion",
+        "texto": "¿Cómo se afilia una persona? (requisitos básicos)"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "sindicato",
+      "gremio",
+      "asociacion",
+      "federacion",
+      "mutual",
+      "cooperativa",
+      "union de trabajadores"
+    ],
+    "fotos": [
+      "meeting room office",
+      "workers"
+    ],
+    "detalleServicios": false
+  },
+  "hotel": {
+    "nombre": "Hoteles, cabañas y hospedajes",
+    "singular": "alojamiento",
+    "busqueda": "hotel cabañas hospedaje",
+    "tono": "cálido, aspiracional, concreto",
+    "estilosSugeridos": [
+      "elegante",
+      "calido",
+      "sereno",
+      "editorial"
+    ],
+    "etiquetaServicios": "Alojamiento",
+    "ejemploServicios": [
+      "Habitaciones",
+      "Desayuno",
+      "Servicios"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Alojate en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: consultá disponibilidad.",
+      "Preguntá por {s}.",
+      "Escribinos y reservá sobre {s}."
+    ],
+    "ctas": [
+      "Consultá disponibilidad",
+      "Reservá por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué tipos de alojamiento y servicios ofrecen? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "checkin",
+        "texto": "¿Cuáles son los horarios de check-in y check-out?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "hotel",
+      "hostel",
+      "cabanas",
+      "hospedaje",
+      "posada",
+      "apart",
+      "alojamiento",
+      "bed and breakfast"
+    ],
+    "fotos": [
+      "hotel room",
+      "cozy cabin"
+    ],
+    "detalleServicios": true
+  },
+  "academia": {
+    "nombre": "Academias, idiomas y cursos",
+    "singular": "academia",
+    "busqueda": "academia idiomas cursos apoyo escolar",
+    "tono": "claro, motivador, cercano",
+    "estilosSugeridos": [
+      "fresco",
+      "brutal",
+      "pastel",
+      "sereno"
+    ],
+    "etiquetaServicios": "Qué se cursa",
+    "ejemploServicios": [
+      "Cursos",
+      "Clases particulares",
+      "Talleres"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Aprendé en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: consultá niveles y horarios.",
+      "Averiguá por {s}.",
+      "Escribinos y te contamos sobre {s}."
+    ],
+    "ctas": [
+      "Consultá por una clase",
+      "Escribinos por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué cursos, materias o idiomas ofrecen? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "modalidad",
+        "texto": "¿Las clases son presenciales, online o ambas? ¿Para qué edades?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "academia",
+      "instituto",
+      "idiomas",
+      "ingles",
+      "cursos",
+      "escuela de",
+      "apoyo escolar",
+      "clases",
+      "capacitacion"
+    ],
+    "fotos": [
+      "classroom students",
+      "language class"
+    ],
+    "detalleServicios": true
+  },
+  "servicios": {
+    "nombre": "Servicios técnicos y oficios",
+    "singular": "servicio técnico",
+    "busqueda": "plomero electricista cerrajero técnico",
+    "tono": "directo, confiable, sin vueltas",
+    "estilosSugeridos": [
+      "industrial",
+      "brutal",
+      "fresco",
+      "noir"
+    ],
+    "etiquetaServicios": "Qué hacemos",
+    "ejemploServicios": [
+      "Instalaciones",
+      "Reparaciones",
+      "Presupuestos"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Resolvemos en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: pedí tu presupuesto.",
+      "Consultá por {s}.",
+      "Escribinos y coordinamos la visita sobre {s}."
+    ],
+    "ctas": [
+      "Pedí presupuesto",
+      "Escribinos por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué trabajos o servicios hacen? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "zonas",
+        "texto": "¿A qué zonas llegan? ¿Atienden urgencias?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "plomer",
+      "electricista",
+      "cerrajer",
+      "gasista",
+      "tecnico",
+      "pintor",
+      "aire acondicionado",
+      "service",
+      "mudanzas",
+      "fletes"
+    ],
+    "fotos": [
+      "plumber tools",
+      "electrician work"
+    ],
+    "detalleServicios": true
+  },
+  "ferreteria": {
+    "nombre": "Ferreterías, corralones y pinturerías",
+    "singular": "comercio",
+    "busqueda": "ferretería corralón pinturería",
+    "tono": "simple, directo, útil",
+    "estilosSugeridos": [
+      "industrial",
+      "brutal",
+      "calido",
+      "fresco"
+    ],
+    "etiquetaServicios": "Qué encontrás",
+    "ejemploServicios": [
+      "Herramientas",
+      "Materiales",
+      "Pinturas"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Todo para tu obra en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: preguntanos si lo tenemos.",
+      "Consultá por {s}.",
+      "Escribinos por WhatsApp sobre {s}."
+    ],
+    "ctas": [
+      "Consultá stock",
+      "Escribinos por WhatsApp"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué rubros o productos venden? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "delivery",
+        "texto": "¿Hacen envíos? ¿Aceptan pedidos por WhatsApp?"
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [
+      "ferreter",
+      "corralon",
+      "pinturer",
+      "materiales de construccion",
+      "sanitarios",
+      "herramientas"
+    ],
+    "fotos": [
+      "hardware store tools",
+      "paint store"
+    ],
+    "detalleServicios": false
+  },
+  "local": {
+    "nombre": "Otros locales",
+    "singular": "local",
+    "busqueda": "",
+    "tono": "simple, amable, directo",
+    "estilosSugeridos": [
+      "calido",
+      "fresco",
+      "brutal",
+      "editorial",
+      "pastel"
+    ],
+    "etiquetaServicios": "Qué ofrecemos",
+    "ejemploServicios": [
+      "Productos",
+      "Servicios",
+      "Atención personalizada"
+    ],
+    "titulares": [
+      "{nombre}",
+      "Tu local en {barrio}",
+      "{s1}, {s2} y más"
+    ],
+    "bajadas": [
+      "{Singular} en {zona}. {lista}.",
+      "En {barrio}: {lista}. Escribinos y coordinamos.",
+      "{lista}. Pasá por {nombre} o escribinos por WhatsApp."
+    ],
+    "descGenericas": [
+      "{S}: consultanos por WhatsApp.",
+      "Preguntá por {s}.",
+      "Escribinos y te contamos sobre {s}."
+    ],
+    "ctas": [
+      "Escribinos por WhatsApp",
+      "Consultanos"
+    ],
+    "preguntas": [
+      {
+        "campo": "servicios",
+        "texto": "¿Qué productos o servicios ofrecen? Separados por coma."
+      },
+      {
+        "campo": "horarios",
+        "texto": "¿Cuáles son los días y horarios de atención?"
+      },
+      {
+        "campo": "direccion",
+        "texto": "¿Cuál es la dirección exacta del local?"
+      },
+      {
+        "campo": "instagram",
+        "texto": "¿Tienen Instagram? Pasame el usuario (o escribí \"no\")."
+      },
+      {
+        "campo": "extra",
+        "texto": "¿Algo que los distinga? (años de trayectoria, equipo, lo que sea). Solo datos reales."
+      }
+    ],
+    "claves": [],
+    "fotos": [
+      "shop interior",
+      "store display"
+    ],
+    "detalleServicios": false
+  }
+}

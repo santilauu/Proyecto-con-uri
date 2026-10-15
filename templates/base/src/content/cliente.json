@@ -1,0 +1,72 @@
+{
+  "siteUrl": "https://ejemplo.vercel.app",
+  "rubro": "Gimnasio",
+  "nombre": "Nombre del negocio",
+  "titulo": "Titular que se entiende en una línea",
+  "bajada": "Una o dos frases concretas sobre qué hace el negocio y para quién.",
+  "cta": "Escribinos por WhatsApp",
+  "etiquetaServicios": "Qué ofrecemos",
+  "servicios": [
+    {
+      "titulo": "Servicio uno",
+      "texto": "Descripción breve y concreta."
+    },
+    {
+      "titulo": "Servicio dos",
+      "texto": "Descripción breve y concreta."
+    },
+    {
+      "titulo": "Servicio tres",
+      "texto": "Descripción breve y concreta."
+    }
+  ],
+  "horarios": "Lunes a viernes de 9 a 18",
+  "direccion": "Calle 123, Barrio",
+  "telefono": "",
+  "whatsapp": "",
+  "instagram": "",
+  "facebook": "",
+  "extras": [],
+  "media": {
+    "fotos": [],
+    "videos": []
+  },
+  "seo": {
+    "titulo": "Nombre del negocio | Rubro en tu barrio",
+    "descripcion": "Descripción de hasta 155 caracteres."
+  },
+  "adn": {
+    "estilo": "noir",
+    "par": "syne-inter",
+    "hero": "gigante",
+    "servicios": "lista",
+    "decor": "grano",
+    "animacion": "clip",
+    "marquee": true,
+    "datosAntes": false,
+    "textos": {
+      "datos": "Pasá a vernos",
+      "contacto": "Hablemos"
+    },
+    "vars": {
+      "--bg": "#0b0b0c",
+      "--fg": "#f4f1ea",
+      "--muted": "#a8a39a",
+      "--accent": "#f5a524",
+      "--accent-ink": "#0b0b0c",
+      "--surface": "#151517",
+      "--line": "#2a2a2d",
+      "--radius": "2px",
+      "--shadow": "none",
+      "--h-case": "none",
+      "--h-track": "-0.03em",
+      "--h-weight": "800",
+      "--f-titulo": "\"Syne\", system-ui, sans-serif",
+      "--f-texto": "\"Inter\", system-ui, sans-serif"
+    }
+  },
+  "adns": {},
+  "precios": [],
+  "equipo": "",
+  "faq": []
+}

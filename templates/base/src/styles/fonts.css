@@ -1,0 +1,10 @@
+/* Este archivo lo regenera el generador según el estilo elegido. */
+@import "@fontsource/syne/700.css";
+@import "@fontsource/syne/800.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/600.css";
+
+:root {
+  --f-titulo: "Syne", system-ui, sans-serif;
+  --f-texto: "Inter", system-ui, sans-serif;
+}

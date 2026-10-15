@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Caballito — Sitio Oficial</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #030712 !important; 
+            color: #f9fafb !important; 
+            overflow-x: hidden;
+            margin: 0;
+        }
+        .glass-card { 
+            background: rgba(17, 24, 39, 0.5) !important; 
+            backdrop-filter: blur(16px); 
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08) !important; 
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div style="position: fixed; top: 0; left: 50%; transform: translateX(-50%); width: 700px; height: 400px; border-radius: 9999px; pointer-events: none; filter: blur(140px); z-index: 0; background: rgba(16,185,129,0.15);"></div>
+
+    <nav class="relative z-10 max-w-7xl mx-auto px-8 py-8 flex justify-between items-center">
+        <span class="text-xs uppercase font-extrabold tracking-[0.25em]" style="color: #34d399;">Atlas Caballito</span>
+        <a href="https://wa.me/?text=Hola!%20Vi%20el%20sitio%20de%20Atlas%20Caballito" class="text-xs uppercase tracking-widest border border-slate-800 bg-slate-900/80 px-5 py-2.5 rounded-full hover:border-slate-700 transition-all text-slate-200">
+            Contacto
+        </a>
+    </nav>
+
+    <section class="relative z-10 max-w-5xl mx-auto px-6 pt-16 pb-24 text-center">
+        <div class="hero-elem inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-800 bg-slate-900/80 text-xs font-semibold mb-8 backdrop-blur-md" style="color: #34d399; border-color: rgba(255,255,255,0.1);">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            <span>Propuesta Digital Exclusiva</span>
+        </div>
+
+        <h1 class="hero-elem text-4xl md:text-7xl font-extrabold tracking-tight mb-8 bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent leading-none">
+            El espacio oficial de Atlas Caballito
+        </h1>
+
+        <p class="hero-elem text-lg md:text-xl text-slate-400 font-light max-w-2xl mx-auto mb-12 leading-relaxed">
+            Diseñado para brindar una experiencia ágil, moderna y directa a todos nuestros clientes en la zona.
+        </p>
+
+        <div class="hero-elem">
+            <a href="https://wa.me/?text=Hola!%20Quiero%20más%20información%20sobre%20Atlas%20Caballito" 
+               class="inline-flex items-center gap-3 font-bold px-8 py-4 rounded-2xl shadow-xl transition-all transform hover:scale-105"
+               style="background-color: #10b981; color: #020617;">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Contactar por WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="relative z-10 max-w-6xl mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-3 gap-6">
+            
+                <div class="reveal-card glass-card p-8 rounded-3xl transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center mb-6" style="color: #34d399;">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Atención Profesional</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Compromiso de calidad en cada detalle de nuestro servicio.</p>
+                </div>
+            
+                <div class="reveal-card glass-card p-8 rounded-3xl transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center mb-6" style="color: #34d399;">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Respuestas Inmediatas</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Canales directos habilitados para resolver tus consultas.</p>
+                </div>
+            
+                <div class="reveal-card glass-card p-8 rounded-3xl transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center mb-6" style="color: #34d399;">
+                        <i data-lucide="map-pin" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Ubicación Privilegiada</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Encontranos fácilmente con atención personalizada.</p>
+                </div>
+            
+        </div>
+    </section>
+
+    <section class="relative z-10 max-w-4xl mx-auto px-6 py-16 border-t border-slate-900">
+        <h2 class="text-xs uppercase tracking-[0.3em] text-slate-500 text-center mb-12">Especialidades & Servicios</h2>
+        <div class="space-y-4">
+            
+                <div class="glass-card p-6 rounded-2xl flex justify-between items-center transition-all">
+                    <div>
+                        <h4 class="font-bold text-slate-100">Atención Personalizada</h4>
+                        <p class="text-xs text-slate-400 mt-1">Consultas directas a través de nuestro canal de WhatsApp.</p>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-600"></i>
+                </div>
+            
+                <div class="glass-card p-6 rounded-2xl flex justify-between items-center transition-all">
+                    <div>
+                        <h4 class="font-bold text-slate-100">Servicios Especializados</h4>
+                        <p class="text-xs text-slate-400 mt-1">Soluciones a medida ajustadas a lo que necesitás.</p>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-600"></i>
+                </div>
+            
+                <div class="glass-card p-6 rounded-2xl flex justify-between items-center transition-all">
+                    <div>
+                        <h4 class="font-bold text-slate-100">Presupuestos sin Cargo</h4>
+                        <p class="text-xs text-slate-400 mt-1">Asesoramiento completo sobre nuestros productos o servicios.</p>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-5 h-5 text-slate-600"></i>
+                </div>
+            
+        </div>
+    </section>
+
+    <section class="relative z-10 max-w-3xl mx-auto px-6 py-16 border-t border-slate-900">
+        <h2 class="text-xs uppercase tracking-[0.3em] text-slate-500 text-center mb-10">Preguntas Frecuentes</h2>
+        <div class="space-y-4">
+            
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(0)" class="w-full text-left p-6 font-semibold flex justify-between items-center text-sm text-slate-200 hover:text-white">
+                        <span>¿Cómo puedo contactarme?</span>
+                        <i data-lucide="chevron-down" id="faq-icon-0" class="w-4 h-4 transition-transform"></i>
+                    </button>
+                    <div id="faq-ans-0" class="hidden px-6 pb-6 text-xs text-slate-400 leading-relaxed border-t border-slate-800/50 pt-4">
+                        Haz clic en el botón de WhatsApp para comunicarte directamente con nosotros.
+                    </div>
+                </div>
+            
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full text-left p-6 font-semibold flex justify-between items-center text-sm text-slate-200 hover:text-white">
+                        <span>¿Cuáles son los horarios de atención?</span>
+                        <i data-lucide="chevron-down" id="faq-icon-1" class="w-4 h-4 transition-transform"></i>
+                    </button>
+                    <div id="faq-ans-1" class="hidden px-6 pb-6 text-xs text-slate-400 leading-relaxed border-t border-slate-800/50 pt-4">
+                        Atendemos de lunes a viernes en horario comercial. Escribinos para coordinar.
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <footer class="relative z-10 py-12 text-center text-[10px] text-slate-600 uppercase tracking-widest border-t border-slate-900">
+        Prototipo diseñado exclusivamente para Atlas Caballito
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.Lenis) {
+                const lenis = new Lenis({ duration: 1.2 });
+                function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+                requestAnimationFrame(raf);
+            }
+
+            if (window.gsap) {
+                gsap.registerPlugin(ScrollTrigger);
+                gsap.from('.hero-elem', { opacity: 0, y: 30, duration: 1, stagger: 0.15, ease: 'power3.out' });
+
+                gsap.utils.toArray('.reveal-card').forEach(card => {
+                    gsap.from(card, {
+                        scrollTrigger: { trigger: card, start: 'top 85%' },
+                        opacity: 0, y: 40, duration: 0.8, ease: 'power3.out'
+                    });
+                });
+            }
+
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        });
+
+        function toggleFaq(idx) {
+            const ans = document.getElementById('faq-ans-' + idx);
+            const icon = document.getElementById('faq-icon-' + idx);
+            if (ans && icon) {
+                ans.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>

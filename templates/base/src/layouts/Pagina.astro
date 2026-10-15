@@ -1,0 +1,39 @@
+---
+import Base from './Base.astro';
+import Nav from '../components/Nav.astro';
+import { whatsapp, creditos } from '../lib/sitio.js';
+
+interface Props { cliente: any; adn: any; titulo: string; descripcion: string; actual?: string }
+const { cliente, adn, titulo, descripcion, actual = '/' } = Astro.props;
+const wa = whatsapp(cliente);
+const anio = new Date().getFullYear();
+---
+<Base adn={adn} titulo={titulo} descripcion={descripcion}>
+  <header class="flex flex-col gap-3 px-4 py-4 md:flex-row md:items-center md:justify-between md:px-10">
+    <a href="/" class="titulo text-xl">{cliente.nombre}</a>
+    <div class="flex flex-wrap items-center gap-4">
+      <Nav cliente={cliente} actual={actual} />
+      <a class="btn btn-ghost !min-h-11 !py-2 text-sm" href={wa}>WhatsApp</a>
+    </div>
+  </header>
+
+  {cliente.demo && <p class="bg-accent px-4 py-2 text-center text-sm font-semibold text-accent-ink">Demostración con textos de ejemplo. Los reemplazamos con los datos reales de tu negocio.</p>}
+  <main id="contenido" class="px-4 pb-20 pt-10 md:px-10 md:pt-16">
+    <slot />
+  </main>
+
+  <footer class="border-t border-line px-4 py-6 text-sm text-muted md:px-10">
+    <p>© {anio} {cliente.nombre}</p>
+    {creditos(cliente).length > 0 && (
+      <p class="mt-2 max-w-3xl text-xs">
+        Fotos ilustrativas:{' '}
+        {creditos(cliente).map((c: any, i: number) => (
+          <>
+            {i > 0 && ' · '}
+            <a class="inline-flex min-h-11 items-center underline" href={c.origen} rel="noopener">{c.creador}</a> ({c.licencia})
+          </>
+        ))}
+      </p>
+    )}
+  </footer>
+</Base>

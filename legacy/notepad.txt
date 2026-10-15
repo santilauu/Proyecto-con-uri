@@ -1,0 +1,22 @@
+# Directivas del Proyecto — Automación de Leads & Landing Pages
+
+## Arquitectura del Proyecto
+- **Lenguaje/Entorno**: Node.js, JavaScript (CommonJS)
+- **Despliegue**: Vercel CLI (`npx vercel --prod`)
+- **Memoria de UX por Rubro**: `rubros_ux.json` (Almacenamiento local acumulativo para evitar consultas repetidas).
+
+## Reglas de Generación Web (UI/UX)
+- **Estándar**: Sitios de nivel Awwwards, modo oscuro por defecto (`bg-[#030712]`), tipografía Plus Jakarta Sans.
+- **Interactividad**: Uso de Tailwind CSS, Alpine.js (para carritos, modales y filtros de categorías en vivo), GSAP, Lenis Smooth Scroll y Lucide Icons.
+- **Micro-interacciones**: Transiciones fluidas en botones, tarjetas con glassmorphism y acordeones FAQ.
+- **Conversión**: Botones flotantes y llamados a la acción (CTA) vinculados directamente a WhatsApp (`wa.me`).
+
+## Flujo Bajo Demanda (WhatsApp Outreach)
+1. Escanear negocios sin sitio web vía `scraper.js`.
+2. Enviar propuesta inicial de WhatsApp.
+3. Al recibir confirmación del cliente, generar el sitio dinámico según su rubro y desplegar en Vercel.
+
+## Comandos Principales
+- `node scraper.js` -> Extrae prospectos sin web.
+- `node generador_ux_master.js` -> Compila y genera prototipos locales.
+- `node deploy.js` -> Despliega los sitios generados a Vercel.

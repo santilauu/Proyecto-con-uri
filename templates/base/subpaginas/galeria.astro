@@ -1,0 +1,18 @@
+---
+import Pagina from '../layouts/Pagina.astro';
+import cliente from '../content/cliente.json';
+const fotos: { src: string; alt: string; w: number; h: number; ilustrativa?: boolean }[] = [
+  ...(cliente.media?.fotos ?? []),
+];
+---
+<Pagina cliente={cliente} adn={cliente.adn} titulo={`Galería | ${cliente.nombre}`} descripcion={`Fotos de ${cliente.nombre}.`} actual="/galeria/">
+  <h1 class="rv text-[clamp(2.5rem,7vw,6rem)]">Galería</h1>
+  <div class="mt-12 grid gap-4 md:grid-cols-2">
+    {fotos.map((f, i) => (
+      <figure class="rv" style={`--i:${i % 4}`}>
+        <img class="foto h-72 w-full object-cover md:h-96" src={f.src} alt={f.alt} width={f.w} height={f.h} loading="lazy" decoding="async" />
+        {f.ilustrativa && <figcaption class="mt-2 text-xs text-muted">Imagen ilustrativa</figcaption>}
+      </figure>
+    ))}
+  </div>
+</Pagina>
